@@ -1,0 +1,40 @@
+|full_adder
+a => a.IN3
+b => b.IN3
+carry_in => carry_in.IN3
+sum <= xor_gate:and_inst.y
+carry_out <= or_gate:or_inst.y
+
+
+|full_adder|xor_gate:and_inst
+in1 => y.IN0
+in2 => y.IN1
+in3 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|and_gate:and_inst1
+in1 => y.IN0
+in2 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|and_gate:and_inst2
+in1 => y.IN0
+in2 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|and_gate:and_inst3
+in1 => y.IN0
+in2 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|or_gate:or_inst
+in1 => y.IN0
+in2 => y.IN1
+in3 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

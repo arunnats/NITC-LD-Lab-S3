@@ -1,0 +1,121 @@
+|full_addder_using_half
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+sum[0] <= full_adder:add1.sum
+sum[1] <= full_adder:add2.sum
+sum[2] <= full_adder:add3.sum
+sum[3] <= full_adder:add4.sum
+finalcarry <= full_adder:add4.cout
+
+
+|full_addder_using_half|full_adder:add1
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= half_adder:ha1.sum
+cout <= or_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_addder_using_half|full_adder:add1|half_adder:ha0
+a => xor_1.IN0
+a => and_1.IN0
+b => xor_1.IN1
+b => and_1.IN1
+sum <= xor_1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= and_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_addder_using_half|full_adder:add1|half_adder:ha1
+a => xor_1.IN0
+a => and_1.IN0
+b => xor_1.IN1
+b => and_1.IN1
+sum <= xor_1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= and_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_addder_using_half|full_adder:add2
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= half_adder:ha1.sum
+cout <= or_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_addder_using_half|full_adder:add2|half_adder:ha0
+a => xor_1.IN0
+a => and_1.IN0
+b => xor_1.IN1
+b => and_1.IN1
+sum <= xor_1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= and_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_addder_using_half|full_adder:add2|half_adder:ha1
+a => xor_1.IN0
+a => and_1.IN0
+b => xor_1.IN1
+b => and_1.IN1
+sum <= xor_1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= and_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_addder_using_half|full_adder:add3
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= half_adder:ha1.sum
+cout <= or_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_addder_using_half|full_adder:add3|half_adder:ha0
+a => xor_1.IN0
+a => and_1.IN0
+b => xor_1.IN1
+b => and_1.IN1
+sum <= xor_1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= and_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_addder_using_half|full_adder:add3|half_adder:ha1
+a => xor_1.IN0
+a => and_1.IN0
+b => xor_1.IN1
+b => and_1.IN1
+sum <= xor_1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= and_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_addder_using_half|full_adder:add4
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= half_adder:ha1.sum
+cout <= or_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_addder_using_half|full_adder:add4|half_adder:ha0
+a => xor_1.IN0
+a => and_1.IN0
+b => xor_1.IN1
+b => and_1.IN1
+sum <= xor_1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= and_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_addder_using_half|full_adder:add4|half_adder:ha1
+a => xor_1.IN0
+a => and_1.IN0
+b => xor_1.IN1
+b => and_1.IN1
+sum <= xor_1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= and_1.DB_MAX_OUTPUT_PORT_TYPE
+
+

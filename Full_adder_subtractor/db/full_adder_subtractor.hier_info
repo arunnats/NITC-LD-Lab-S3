@@ -1,0 +1,73 @@
+|full_adder_subtractor
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+k => k.IN5
+sum[0] <= adder:add1.sum
+sum[1] <= adder:add2.sum
+sum[2] <= adder:add3.sum
+sum[3] <= adder:add4.sum
+finalcarry <= adder:add4.cout
+
+
+|full_adder_subtractor|adder:add1
+a => xor_f1_1.IN1
+a => and_f1_0.IN1
+a => and_f1_1.IN0
+b => xor_f1_0.IN0
+k => xor_f1_0.IN1
+k => xor_f1_1.IN2
+k => and_f1_1.IN1
+k => and_f1_2.IN1
+cin => ~NO_FANOUT~
+sum <= xor_f1_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_f1_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder_subtractor|adder:add2
+a => xor_f1_1.IN1
+a => and_f1_0.IN1
+a => and_f1_1.IN0
+b => xor_f1_0.IN0
+k => xor_f1_0.IN1
+k => xor_f1_1.IN2
+k => and_f1_1.IN1
+k => and_f1_2.IN1
+cin => ~NO_FANOUT~
+sum <= xor_f1_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_f1_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder_subtractor|adder:add3
+a => xor_f1_1.IN1
+a => and_f1_0.IN1
+a => and_f1_1.IN0
+b => xor_f1_0.IN0
+k => xor_f1_0.IN1
+k => xor_f1_1.IN2
+k => and_f1_1.IN1
+k => and_f1_2.IN1
+cin => ~NO_FANOUT~
+sum <= xor_f1_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_f1_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder_subtractor|adder:add4
+a => xor_f1_1.IN1
+a => and_f1_0.IN1
+a => and_f1_1.IN0
+b => xor_f1_0.IN0
+k => xor_f1_0.IN1
+k => xor_f1_1.IN2
+k => and_f1_1.IN1
+k => and_f1_2.IN1
+cin => ~NO_FANOUT~
+sum <= xor_f1_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_f1_0.DB_MAX_OUTPUT_PORT_TYPE
+
+

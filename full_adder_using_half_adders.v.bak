@@ -1,0 +1,16 @@
+module full_adder_using_half_adders(
+    input a,
+    input b,
+    input cin,
+    output sum,
+    output cout
+);
+
+    wire [1:0] ha_sum, [1:0] ha_carry;
+
+    half_adder half_adder_inst1 (.a(a), .b(b), .sum(ha_sum[0]), .carry(ha_carry[0]));
+    half_adder half_adder_inst2 (.a(ha_sum[0]), .b(cin), .sum(sum), .carry(ha_carry[1]));
+
+    assign cout = half_adder1_carry || half_adder2_carry;
+
+endmodule

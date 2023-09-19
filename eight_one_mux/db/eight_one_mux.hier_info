@@ -1,0 +1,36 @@
+|eight_one_mux
+y <= or_0.DB_MAX_OUTPUT_PORT_TYPE
+in0 => and_0.IN0
+in1 => and_1.IN0
+in2 => and_2.IN0
+in3 => and_3.IN0
+in4 => and_4.IN0
+in5 => and_5.IN0
+in6 => and_6.IN0
+in7 => and_7.IN0
+s0 => and_4.IN1
+s0 => and_5.IN1
+s0 => and_6.IN1
+s0 => and_7.IN1
+s0 => and_0.IN1
+s0 => and_1.IN1
+s0 => and_2.IN1
+s0 => and_3.IN1
+s1 => and_2.IN2
+s1 => and_3.IN2
+s1 => and_6.IN2
+s1 => and_7.IN2
+s1 => and_0.IN2
+s1 => and_1.IN2
+s1 => and_4.IN2
+s1 => and_5.IN2
+s2 => and_1.IN3
+s2 => and_3.IN3
+s2 => and_5.IN3
+s2 => and_7.IN3
+s2 => and_0.IN3
+s2 => and_2.IN3
+s2 => and_4.IN3
+s2 => and_6.IN3
+
+

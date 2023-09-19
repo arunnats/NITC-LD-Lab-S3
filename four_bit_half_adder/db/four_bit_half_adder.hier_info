@@ -1,0 +1,15 @@
+|four_bit_half_adder
+a[0] => xor_h0.IN0
+a[1] => xor_h1.IN0
+a[2] => xor_h2.IN0
+a[3] => xor_h3.IN0
+b[0] => xor_h0.IN1
+b[1] => xor_h1.IN1
+b[2] => xor_h2.IN1
+b[3] => xor_h3.IN1
+sum[0] << xor_h0.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] << xor_h1.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] << xor_h2.DB_MAX_OUTPUT_PORT_TYPE
+sum[3] << xor_h3.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,43 @@
+|one_eight_demux
+y0 <= and_0.DB_MAX_OUTPUT_PORT_TYPE
+y1 <= and_1.DB_MAX_OUTPUT_PORT_TYPE
+y2 <= and_2.DB_MAX_OUTPUT_PORT_TYPE
+y3 <= and_3.DB_MAX_OUTPUT_PORT_TYPE
+y4 <= and_4.DB_MAX_OUTPUT_PORT_TYPE
+y5 <= and_5.DB_MAX_OUTPUT_PORT_TYPE
+y6 <= and_6.DB_MAX_OUTPUT_PORT_TYPE
+y7 <= and_7.DB_MAX_OUTPUT_PORT_TYPE
+a => and_0.IN0
+a => and_1.IN0
+a => and_2.IN0
+a => and_3.IN0
+a => and_4.IN0
+a => and_5.IN0
+a => and_6.IN0
+a => and_7.IN0
+s0 => and_4.IN1
+s0 => and_5.IN1
+s0 => and_6.IN1
+s0 => and_7.IN1
+s0 => and_0.IN1
+s0 => and_1.IN1
+s0 => and_2.IN1
+s0 => and_3.IN1
+s1 => and_2.IN2
+s1 => and_3.IN2
+s1 => and_6.IN2
+s1 => and_7.IN2
+s1 => and_0.IN2
+s1 => and_1.IN2
+s1 => and_4.IN2
+s1 => and_5.IN2
+s2 => and_1.IN3
+s2 => and_3.IN3
+s2 => and_5.IN3
+s2 => and_7.IN3
+s2 => and_0.IN3
+s2 => and_2.IN3
+s2 => and_4.IN3
+s2 => and_6.IN3
+
+

@@ -1,0 +1,15 @@
+|Verilog_Ld_Lab
+a => a.IN1
+b => b.IN1
+carry_in => carry_in.IN1
+sum <= xor_gate:xor_inst.y
+carry_out <= <GND>
+
+
+|Verilog_Ld_Lab|xor_gate:xor_inst
+a => y.IN0
+b => y.IN1
+c => ~NO_FANOUT~
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

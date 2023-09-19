@@ -1,0 +1,38 @@
+module one_eight_demux(
+    output y0,
+    output y1,
+    output y2,
+    output y3,
+    output y4,
+    output y5,
+    output y6,
+    output y7,
+	 output a,
+    yput s0,
+    yput s1,
+    yput s2
+);
+
+    wire [2:0] not_s;
+    wire and_gate [7:0], or_gate;
+    
+/*  assign not_s[0]=-(s0);
+	 assign not_s[1]=-(s1);
+	 assign not_s[2]=-(s2);*/
+	 
+    not not_0(not_s[0], s0);
+    not not_1(not_s[1], s1);
+    not not_2(not_s[2], s2);
+    
+    and and_0(y0, not_s[0], not_s[1], not_s[2], a;
+    and and_1(y1, not_s[0], not_s[1], s2, a);
+    and and_2(y2, not_s[0], s1, not_s[2], a);
+    and and_3(y3, not_s[0], s1, s2, a);
+    and and_4(y4, s0, not_s[1], not_s[2], a);
+    and and_5(y5, s0, not_s[1], s2, a);
+    and and_6(y6, s0, s1, not_s[2], a);
+    and and_7(y7, s0, s1, s2, a);
+
+	 
+	 
+endmodule

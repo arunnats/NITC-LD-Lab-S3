@@ -1,0 +1,20 @@
+eight_one_mux{
+	output, y,
+	input in0,
+	input in1,
+	input in2,
+	input in3,
+	input in4,
+	input in5,
+	input in6,
+	input in7,
+	input [2:0] s
+);
+
+	wire [2:0} not_s;
+	
+	not not_0(not_s[0],s[0]);
+	not not_1(not_s[1],s[1]);
+	not not_2(not_s[2],s[2]);
+	
+	

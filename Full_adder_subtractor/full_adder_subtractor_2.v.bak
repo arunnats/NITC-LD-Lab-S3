@@ -1,0 +1,29 @@
+module full_adder_subtractor(
+    input [3:0] a,
+    input [3:0] b,
+    input cin,
+    input k,
+    output [3:0] sum,
+    output finalcarry
+);
+
+    wire carry_0, carry_1, carry_2, carry_3;
+    reg sum_0, sum_1, sum_2, sum_3;
+    wire [3:0] xor_out;
+
+    xor_gate gate1 (.a(b[0]), .b(k), .y(xor_out[0]));
+    xor_gate gate2 (.a(b[1]), .b(k), .y(xor_out[1]));
+    xor_gate gate3 (.a(b[2]), .b(k), .y(xor_out[2]));
+    xor_gate gate4 (.a(b[3]), .b(k), .y(xor_out[3]));
+
+    full_adder adder1 (.a(a[0]), .b(xor_out[0]), .carry_in(k), .sum(sum_0), .carry_out(carry_0));
+    full_adder adder2 (.a(a[1]), .b(xor_out[1]), .carry_in(carry_0), .sum(sum_1), .carry_out(carry_1));
+    full_adder adder3 (.a(a[2]), .b(xor_out[2]), .carry_in(carry_1), .sum(sum_2), .carry_out(carry_2));
+    full_adder adder4 (.a(a[3]), .b(xor_out[3]), .carry_in(carry_2), .sum(sum_3), .carry_out(carry_3));
+
+    assign sum = {sum_3, sum_2, sum_1, sum_0}; 
+    assign finalcarry = carry_3;
+
+endmodule
+
+// Rest of your modules (xor_gate, full_adder) remain unchanged

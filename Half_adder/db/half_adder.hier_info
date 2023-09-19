@@ -1,0 +1,19 @@
+|half_adder
+a => a.IN2
+b => b.IN2
+sum << xor_gate:xor_inst.y
+carry << and_gate:and_inst.y
+
+
+|half_adder|and_gate:and_inst
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|half_adder|xor_gate:xor_inst
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
