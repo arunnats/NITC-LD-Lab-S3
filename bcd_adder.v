@@ -1,23 +1,23 @@
-module bca_adder(
+ module bcd_adder(
 	 input [3:0] a,
     input [3:0] b,
     output [3:0] sum,
     output finalcarry
 );
-	 wire [3:0] sum_1;
+	 wire [3:0] s;
 	 wire carry;
 	 wire and_wire0, and_wire1, or_wire0;
 	 
-	 four_bit_adder add0 (.a(a),.b(b),.sum_1(sum),.finalcarry(carry));
+	 four_bit_adder add0 (.a(a),.b(b),.sum(s),.finalcarry(carry));
 	 
-	 and and_0(and_wire0,sum_1[3],sum_1[2]);
-	 and and_1(and_wire1,sum_1[3],sum_1[1]);
+	 and and_0(and_wire0,s[3],s[2]);
+	 and and_1(and_wire1,s[3],s[1]);
 	 or or_0(or_wire0,and_wire0,and_wire1,carry);
 	 
-	 four_bit_adder add1 (.a[0](1'b0),.a[1](carry),.a[2](carry),.a[3](1'b0),.b(sum_1),.sum(sum));
+	 four_bit_adder add1 (.a({1'b0, or_wire0, or_wire0, 1'b0}), .b(s), .sum(sum), .finalcarry(finalcarry));
 	 
 	 
-endmodule
+	endmodule
 
  module four_bit_adder(
     input [3:0] a,

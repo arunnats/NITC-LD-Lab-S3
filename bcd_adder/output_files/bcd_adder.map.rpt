@@ -1,5 +1,5 @@
 Analysis & Synthesis report for bcd_adder
-Tue Sep 19 11:43:51 2023
+Sun Sep 24 23:02:38 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -10,7 +10,15 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "four_bit_adder:add1"
+ 10. Port Connectivity Checks: "four_bit_adder:add0|adder:add1"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -37,22 +45,22 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Sep 19 11:43:51 2023              ;
+; Analysis & Synthesis Status        ; Successful - Sun Sep 24 23:02:38 2023          ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; bcd_adder                                      ;
 ; Top-level Entity Name              ; bcd_adder                                      ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; N/A until Partition Merge                      ;
-;     Total combinational functions  ; N/A until Partition Merge                      ;
-;     Dedicated logic registers      ; N/A until Partition Merge                      ;
-; Total registers                    ; N/A until Partition Merge                      ;
-; Total pins                         ; N/A until Partition Merge                      ;
-; Total virtual pins                 ; N/A until Partition Merge                      ;
-; Total memory bits                  ; N/A until Partition Merge                      ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                      ;
-; Total PLLs                         ; N/A until Partition Merge                      ;
-; UFM blocks                         ; N/A until Partition Merge                      ;
-; ADC blocks                         ; N/A until Partition Merge                      ;
+; Total logic elements               ; 9                                              ;
+;     Total combinational functions  ; 9                                              ;
+;     Dedicated logic registers      ; 0                                              ;
+; Total registers                    ; 0                                              ;
+; Total pins                         ; 13                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
 +------------------------------------+------------------------------------------------+
 
 
@@ -147,7 +155,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
+; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -158,25 +166,153 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                  ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                    ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
+; ../bcd_adder.v                   ; yes             ; User Verilog HDL File  ; /home/arunnats/Repos/verilog_ld_lab/bcd_adder.v ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                             ;
++---------------------------------------------+-------------------------------------------+
+; Resource                                    ; Usage                                     ;
++---------------------------------------------+-------------------------------------------+
+; Estimated Total logic elements              ; 9                                         ;
+;                                             ;                                           ;
+; Total combinational functions               ; 9                                         ;
+; Logic element usage by number of LUT inputs ;                                           ;
+;     -- 4 input functions                    ; 3                                         ;
+;     -- 3 input functions                    ; 5                                         ;
+;     -- <=2 input functions                  ; 1                                         ;
+;                                             ;                                           ;
+; Logic elements by mode                      ;                                           ;
+;     -- normal mode                          ; 5                                         ;
+;     -- arithmetic mode                      ; 4                                         ;
+;                                             ;                                           ;
+; Total registers                             ; 0                                         ;
+;     -- Dedicated logic registers            ; 0                                         ;
+;     -- I/O registers                        ; 0                                         ;
+;                                             ;                                           ;
+; I/O pins                                    ; 13                                        ;
+;                                             ;                                           ;
+; Embedded Multiplier 9-bit elements          ; 0                                         ;
+;                                             ;                                           ;
+; Maximum fan-out node                        ; four_bit_adder:add0|adder:add2|xor_f1_1~2 ;
+; Maximum fan-out                             ; 5                                         ;
+; Total fan-out                               ; 45                                        ;
+; Average fan-out                             ; 1.29                                      ;
++---------------------------------------------+-------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                       ; Entity Name    ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------+----------------+--------------+
+; |bcd_adder                 ; 9 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 13   ; 0            ; 0          ; |bcd_adder                                ; bcd_adder      ; work         ;
+;    |four_bit_adder:add0|   ; 5 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |bcd_adder|four_bit_adder:add0            ; four_bit_adder ; work         ;
+;       |adder:add2|         ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |bcd_adder|four_bit_adder:add0|adder:add2 ; adder          ; work         ;
+;    |four_bit_adder:add1|   ; 4 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |bcd_adder|four_bit_adder:add1            ; four_bit_adder ; work         ;
+;       |adder:add2|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |bcd_adder|four_bit_adder:add1|adder:add2 ; adder          ; work         ;
+;       |adder:add3|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |bcd_adder|four_bit_adder:add1|adder:add3 ; adder          ; work         ;
+;       |adder:add4|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |bcd_adder|four_bit_adder:add1|adder:add4 ; adder          ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------+----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "four_bit_adder:add1" ;
++------+-------+----------+-----------------------+
+; Port ; Type  ; Severity ; Details               ;
++------+-------+----------+-----------------------+
+; a[3] ; Input ; Info     ; Stuck at GND          ;
+; a[0] ; Input ; Info     ; Stuck at GND          ;
++------+-------+----------+-----------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "four_bit_adder:add0|adder:add1" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 13                          ;
+; cycloneiii_lcell_comb ; 9                           ;
+;     arith             ; 4                           ;
+;         3 data inputs ; 4                           ;
+;     normal            ; 5                           ;
+;         0 data inputs ; 1                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 3                           ;
+;                       ;                             ;
+; Max LUT depth         ; 2.40                        ;
+; Average LUT depth     ; 2.24                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Tue Sep 19 11:43:44 2023
+    Info: Processing started: Sun Sep 24 23:02:32 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bcd_adder -c bcd_adder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
-Error (10170): Verilog HDL syntax error at bcd_adder.v(17) near text: "[";  expecting ")". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: /home/arunnats/repos/Verilog/bcd_adder.v Line: 17
-Error (10112): Ignored design unit "bca_adder" at bcd_adder.v(1) due to previous errors File: /home/arunnats/repos/Verilog/bcd_adder.v Line: 1
-Error (10112): Ignored design unit "four_bit_adder" at bcd_adder.v(22) due to previous errors File: /home/arunnats/repos/Verilog/bcd_adder.v Line: 22
-Error (10112): Ignored design unit "adder" at bcd_adder.v(40) due to previous errors File: /home/arunnats/repos/Verilog/bcd_adder.v Line: 40
-Info (12021): Found 0 design units, including 0 entities, in source file /home/arunnats/repos/Verilog/bcd_adder.v
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 4 errors, 1 warning
-    Error: Peak virtual memory: 341 megabytes
-    Error: Processing ended: Tue Sep 19 11:43:51 2023
-    Error: Elapsed time: 00:00:07
-    Error: Total CPU time (on all processors): 00:00:16
+Info (12021): Found 3 design units, including 3 entities, in source file /home/arunnats/Repos/verilog_ld_lab/bcd_adder.v
+    Info (12023): Found entity 1: bcd_adder File: /home/arunnats/Repos/verilog_ld_lab/bcd_adder.v Line: 1
+    Info (12023): Found entity 2: four_bit_adder File: /home/arunnats/Repos/verilog_ld_lab/bcd_adder.v Line: 22
+    Info (12023): Found entity 3: adder File: /home/arunnats/Repos/verilog_ld_lab/bcd_adder.v Line: 40
+Info (12127): Elaborating entity "bcd_adder" for the top level hierarchy
+Info (12128): Elaborating entity "four_bit_adder" for hierarchy "four_bit_adder:add0" File: /home/arunnats/Repos/verilog_ld_lab/bcd_adder.v Line: 11
+Info (12128): Elaborating entity "adder" for hierarchy "four_bit_adder:add0|adder:add1" File: /home/arunnats/Repos/verilog_ld_lab/bcd_adder.v Line: 32
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 22 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 9 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 428 megabytes
+    Info: Processing ended: Sun Sep 24 23:02:38 2023
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:16
 
 

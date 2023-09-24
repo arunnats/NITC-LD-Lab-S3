@@ -32,6 +32,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "cin",
+					"strict" : false
+				},
+				{
 					"name" : "b[1]",
 					"strict" : false
 				},

@@ -7,14 +7,14 @@ b[0] => b[0].IN1
 b[1] => b[1].IN1
 b[2] => b[2].IN1
 b[3] => b[3].IN1
-sum[0] <= four_bit_ripple_adder:add1.sum
-sum[1] <= four_bit_ripple_adder:add1.sum
-sum[2] <= four_bit_ripple_adder:add1.sum
-sum[3] <= four_bit_ripple_adder:add1.sum
-finalcarry <= four_bit_ripple_adder:add1.finalcarry
+sum[0] <= four_bit_adder:add1.sum
+sum[1] <= four_bit_adder:add1.sum
+sum[2] <= four_bit_adder:add1.sum
+sum[3] <= four_bit_adder:add1.sum
+finalcarry <= four_bit_adder:add1.finalcarry
 
 
-|bcd_adder|four_bit_ripple_adder:add0
+|bcd_adder|four_bit_adder:add0
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -30,39 +30,63 @@ sum[3] <= adder:add4.sum
 finalcarry <= adder:add4.cout
 
 
-|bcd_adder|four_bit_ripple_adder:add0|adder:add1
-a => Add0.IN1
-b => Add0.IN2
-cin => Add1.IN4
-sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
-cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+|bcd_adder|four_bit_adder:add0|adder:add1
+a => xor_f1_1.IN0
+a => and_f1_0.IN0
+a => and_f1_1.IN0
+b => xor_f1_1.IN1
+b => and_f1_0.IN1
+b => and_f1_2.IN0
+cin => xor_f1_1.IN2
+cin => and_f1_1.IN1
+cin => and_f1_2.IN1
+sum <= xor_f1_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_f1_0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|bcd_adder|four_bit_ripple_adder:add0|adder:add2
-a => Add0.IN1
-b => Add0.IN2
-cin => Add1.IN4
-sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
-cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+|bcd_adder|four_bit_adder:add0|adder:add2
+a => xor_f1_1.IN0
+a => and_f1_0.IN0
+a => and_f1_1.IN0
+b => xor_f1_1.IN1
+b => and_f1_0.IN1
+b => and_f1_2.IN0
+cin => xor_f1_1.IN2
+cin => and_f1_1.IN1
+cin => and_f1_2.IN1
+sum <= xor_f1_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_f1_0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|bcd_adder|four_bit_ripple_adder:add0|adder:add3
-a => Add0.IN1
-b => Add0.IN2
-cin => Add1.IN4
-sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
-cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+|bcd_adder|four_bit_adder:add0|adder:add3
+a => xor_f1_1.IN0
+a => and_f1_0.IN0
+a => and_f1_1.IN0
+b => xor_f1_1.IN1
+b => and_f1_0.IN1
+b => and_f1_2.IN0
+cin => xor_f1_1.IN2
+cin => and_f1_1.IN1
+cin => and_f1_2.IN1
+sum <= xor_f1_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_f1_0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|bcd_adder|four_bit_ripple_adder:add0|adder:add4
-a => Add0.IN1
-b => Add0.IN2
-cin => Add1.IN4
-sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
-cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+|bcd_adder|four_bit_adder:add0|adder:add4
+a => xor_f1_1.IN0
+a => and_f1_0.IN0
+a => and_f1_1.IN0
+b => xor_f1_1.IN1
+b => and_f1_0.IN1
+b => and_f1_2.IN0
+cin => xor_f1_1.IN2
+cin => and_f1_1.IN1
+cin => and_f1_2.IN1
+sum <= xor_f1_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_f1_0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|bcd_adder|four_bit_ripple_adder:add1
+|bcd_adder|four_bit_adder:add1
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -78,35 +102,59 @@ sum[3] <= adder:add4.sum
 finalcarry <= adder:add4.cout
 
 
-|bcd_adder|four_bit_ripple_adder:add1|adder:add1
-a => Add0.IN1
-b => Add0.IN2
-cin => Add1.IN4
-sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
-cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+|bcd_adder|four_bit_adder:add1|adder:add1
+a => xor_f1_1.IN0
+a => and_f1_0.IN0
+a => and_f1_1.IN0
+b => xor_f1_1.IN1
+b => and_f1_0.IN1
+b => and_f1_2.IN0
+cin => xor_f1_1.IN2
+cin => and_f1_1.IN1
+cin => and_f1_2.IN1
+sum <= xor_f1_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_f1_0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|bcd_adder|four_bit_ripple_adder:add1|adder:add2
-a => Add0.IN1
-b => Add0.IN2
-cin => Add1.IN4
-sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
-cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+|bcd_adder|four_bit_adder:add1|adder:add2
+a => xor_f1_1.IN0
+a => and_f1_0.IN0
+a => and_f1_1.IN0
+b => xor_f1_1.IN1
+b => and_f1_0.IN1
+b => and_f1_2.IN0
+cin => xor_f1_1.IN2
+cin => and_f1_1.IN1
+cin => and_f1_2.IN1
+sum <= xor_f1_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_f1_0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|bcd_adder|four_bit_ripple_adder:add1|adder:add3
-a => Add0.IN1
-b => Add0.IN2
-cin => Add1.IN4
-sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
-cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+|bcd_adder|four_bit_adder:add1|adder:add3
+a => xor_f1_1.IN0
+a => and_f1_0.IN0
+a => and_f1_1.IN0
+b => xor_f1_1.IN1
+b => and_f1_0.IN1
+b => and_f1_2.IN0
+cin => xor_f1_1.IN2
+cin => and_f1_1.IN1
+cin => and_f1_2.IN1
+sum <= xor_f1_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_f1_0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|bcd_adder|four_bit_ripple_adder:add1|adder:add4
-a => Add0.IN1
-b => Add0.IN2
-cin => Add1.IN4
-sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
-cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+|bcd_adder|four_bit_adder:add1|adder:add4
+a => xor_f1_1.IN0
+a => and_f1_0.IN0
+a => and_f1_1.IN0
+b => xor_f1_1.IN1
+b => and_f1_0.IN1
+b => and_f1_2.IN0
+cin => xor_f1_1.IN2
+cin => and_f1_1.IN1
+cin => and_f1_2.IN1
+sum <= xor_f1_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_f1_0.DB_MAX_OUTPUT_PORT_TYPE
 
 

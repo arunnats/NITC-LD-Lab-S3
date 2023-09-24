@@ -1,0 +1,12 @@
+module bcd_adder_test();
+	 reg [3:0] a,
+    reg [3:0] b,
+    wire [3:0] sum,
+    wire finalcarry
+	 
+	 bcd_adder testbench(
+  	  .a(a),
+  	  .b(b),
+  	  .sum(sum),
+     .finalcarry(finalcarry)
+	);
