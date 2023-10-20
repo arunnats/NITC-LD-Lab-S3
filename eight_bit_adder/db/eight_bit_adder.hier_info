@@ -15,15 +15,15 @@ b[4] => b[4].IN1
 b[5] => b[5].IN1
 b[6] => b[6].IN1
 b[7] => b[7].IN1
-sum[0] <= four_bit_adder:add1.sum
-sum[1] <= four_bit_adder:add1.sum
-sum[2] <= four_bit_adder:add1.sum
-sum[3] <= four_bit_adder:add1.sum
-sum[4] <= four_bit_adder:add2.sum
-sum[5] <= four_bit_adder:add2.sum
-sum[6] <= four_bit_adder:add2.sum
-sum[7] <= four_bit_adder:add2.sum
-finalcarry <= four_bit_adder:add2.finalcarry
+sum[0] << four_bit_adder:add1.sum
+sum[1] << four_bit_adder:add1.sum
+sum[2] << four_bit_adder:add1.sum
+sum[3] << four_bit_adder:add1.sum
+sum[4] << four_bit_adder:add2.sum
+sum[5] << four_bit_adder:add2.sum
+sum[6] << four_bit_adder:add2.sum
+sum[7] << four_bit_adder:add2.sum
+finalcarry << four_bit_adder:add2.finalcarry
 
 
 |eight_bit_adder|four_bit_adder:add1
