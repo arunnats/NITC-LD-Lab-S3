@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/four_bit_ripple_adder/simulation/modelsim
+vadder
+Z1 !s110 1696869139
+!i10b 1
+!s100 cNE_2HjgUYhBVG@oFP@Pi2
+I7hONkS43AYZ_]ZgzA1jUE1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1696868881
+Z4 8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/four_bit_ripple_adder/four_bit_ripple_adder.v
+Z5 FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/four_bit_ripple_adder/four_bit_ripple_adder.v
+L0 19
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1696869139.000000
+Z8 !s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/four_bit_ripple_adder/four_bit_ripple_adder.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/four_bit_ripple_adder|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/four_bit_ripple_adder/four_bit_ripple_adder.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/four_bit_ripple_adder
+Z12 tCvgOpt 0
+vfour_bit_ripple_adder
+R1
+!i10b 1
+!s100 =`?IHz;9?kVnZ=LzIa]_e2
+ISZiTQN60QbLkkY;WNTiXg0
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vfour_bit_ripple_adder_testbench
+R1
+!i10b 1
+!s100 ljZOXb>=ERXLEam2X[ZMQ0
+I]_<A;FmgB_^;g5z0CPfmc3
+R2
+R0
+w1696869095
+8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/four_bit_ripple_adder/four_bit_ripple_adder_testbench.v
+FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/four_bit_ripple_adder/four_bit_ripple_adder_testbench.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/four_bit_ripple_adder/four_bit_ripple_adder_testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/four_bit_ripple_adder|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/four_bit_ripple_adder/four_bit_ripple_adder_testbench.v|
+!i113 1
+R10
+R11
+R12

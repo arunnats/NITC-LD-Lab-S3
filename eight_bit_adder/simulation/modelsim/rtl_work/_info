@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder/simulation/modelsim
+vadder
+Z1 !s110 1696910254
+!i10b 1
+!s100 WkTVKX`kaPo]BBP8XXbNH1
+InVaRQ`kXGDdCL38Z3OoKb1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1696867589
+Z4 8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder/eight_bit_adder.v
+Z5 FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder/eight_bit_adder.v
+L0 45
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1696910254.000000
+Z8 !s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder/eight_bit_adder.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder/eight_bit_adder.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder
+Z12 tCvgOpt 0
+veight_bit_adder
+R1
+!i10b 1
+!s100 9N=Oa6@n1Z6BDAEZmWL=N3
+IK1jh;2R<jfL17h_eTPXi31
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+veight_bit_adder_testbench
+R1
+!i10b 1
+!s100 HQndJVSID862IIC4R=2EN2
+I6a5KFP9c0@mUiOOIjL3Wj1
+R2
+R0
+w1696910144
+8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder/eight_bit_adder_testbench.v
+FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder/eight_bit_adder_testbench.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder/eight_bit_adder_testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder/eight_bit_adder_testbench.v|
+!i113 1
+R10
+R11
+R12
+vfour_bit_adder
+R1
+!i10b 1
+!s100 =Nb?9VFDdS:Qj435hjCQk1
+IoNP]0GbZn5iIL`SBKbYn`0
+R2
+R0
+R3
+R4
+R5
+L0 26
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12

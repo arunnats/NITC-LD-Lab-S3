@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/bcd_adder/simulation/modelsim
+vadder
+Z1 !s110 1696871928
+!i10b 1
+!s100 k@I`EKA6?3=jai4m8lJ3F2
+Ib40^2[UYRS^=D>=KcT?@G1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1696871102
+Z4 8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/bcd_adder.v
+Z5 FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/bcd_adder.v
+L0 40
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1696871928.000000
+Z8 !s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/bcd_adder.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/bcd_adder.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab
+Z12 tCvgOpt 0
+vbcd_adder
+R1
+!i10b 1
+!s100 kPf8=fnFb2a4cZLZznQWQ0
+I`]=XKBnPVKScWO^ZFR2Hm3
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vbcd_adder_testbench
+R1
+!i10b 1
+!s100 Rce?E6S``Eh2agfND[QIH1
+I69`LDV26n>TI;ngdzzdM10
+R2
+R0
+w1696871672
+8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/bcd_adder/bcd_adder_testbench.v
+FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/bcd_adder/bcd_adder_testbench.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/bcd_adder/bcd_adder_testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/bcd_adder|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/bcd_adder/bcd_adder_testbench.v|
+!i113 1
+R10
+!s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/bcd_adder
+R12
+vfour_bit_adder
+R1
+!i10b 1
+!s100 gKTG@1f[F=BiW`ce2bPlb2
+Ionj[;7BXVG2AYP>o`<Fh80
+R2
+R0
+R3
+R4
+R5
+L0 22
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12

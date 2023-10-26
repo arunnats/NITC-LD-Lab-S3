@@ -1,0 +1,49 @@
+|bcd_excess
+a[0] => aa01.IN0
+a[0] => q.IN0
+a[0] => a0a1.IN0
+a[0] => b[0].IN1
+a[1] => aa01.IN1
+a[1] => q.IN1
+a[1] => greater2.IN0
+a[1] => a0a1.IN1
+a[2] => p.IN1
+a[2] => s.IN1
+a[2] => greater1.IN0
+a[3] => comb.IN1
+a[3] => greater1.IN1
+a[3] => greater2.IN1
+e[0] <= mux21:m1.port2
+e[1] <= mux21:m2.port2
+e[2] <= mux21:m3.port2
+e[3] <= mux21:m4.port2
+
+
+|bcd_excess|mux21:m1
+a => d0.IN0
+b => d1.IN1
+b => d0.IN1
+o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bcd_excess|mux21:m2
+a => d0.IN0
+b => d1.IN1
+b => d0.IN1
+o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bcd_excess|mux21:m3
+a => d0.IN0
+b => d1.IN1
+b => d0.IN1
+o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bcd_excess|mux21:m4
+a => d0.IN0
+b => d1.IN1
+b => d0.IN1
+o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
