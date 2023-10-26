@@ -1,0 +1,387 @@
+|sixteenBitIncrementer
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+b[0] <= halfAdder:h1.s
+b[1] <= halfAdder:h2.s
+b[2] <= halfAdder:h3.s
+b[3] <= halfAdder:h4.s
+b[4] <= halfAdder:h5.s
+b[5] <= halfAdder:h6.s
+b[6] <= halfAdder:h7.s
+b[7] <= halfAdder:h8.s
+b[8] <= halfAdder:h9.s
+b[9] <= halfAdder:h10.s
+b[10] <= halfAdder:h11.s
+b[11] <= halfAdder:h12.s
+b[12] <= halfAdder:h13.s
+b[13] <= halfAdder:h14.s
+b[14] <= halfAdder:h15.s
+b[15] <= halfAdder:h16.s
+finalcarry[0] <= halfAdder:h16.c
+finalcarry[1] <= halfAdder:h16.c
+finalcarry[2] <= halfAdder:h16.c
+finalcarry[3] <= halfAdder:h16.c
+finalcarry[4] <= halfAdder:h16.c
+finalcarry[5] <= halfAdder:h16.c
+finalcarry[6] <= halfAdder:h16.c
+finalcarry[7] <= halfAdder:h16.c
+finalcarry[8] <= halfAdder:h16.c
+finalcarry[9] <= halfAdder:h16.c
+finalcarry[10] <= halfAdder:h16.c
+finalcarry[11] <= halfAdder:h16.c
+finalcarry[12] <= halfAdder:h16.c
+finalcarry[13] <= halfAdder:h16.c
+finalcarry[14] <= halfAdder:h16.c
+finalcarry[15] <= halfAdder:h16.c
+
+
+|sixteenBitIncrementer|halfAdder:h1
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|sixteenBitIncrementer|halfAdder:h1|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h1|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h2
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|sixteenBitIncrementer|halfAdder:h2|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h2|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h3
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|sixteenBitIncrementer|halfAdder:h3|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h3|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h4
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|sixteenBitIncrementer|halfAdder:h4|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h4|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h5
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|sixteenBitIncrementer|halfAdder:h5|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h5|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h6
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|sixteenBitIncrementer|halfAdder:h6|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h6|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h7
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|sixteenBitIncrementer|halfAdder:h7|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h7|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h8
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|sixteenBitIncrementer|halfAdder:h8|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h8|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h9
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|sixteenBitIncrementer|halfAdder:h9|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h9|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h10
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|sixteenBitIncrementer|halfAdder:h10|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h10|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h11
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|sixteenBitIncrementer|halfAdder:h11|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h11|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h12
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|sixteenBitIncrementer|halfAdder:h12|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h12|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h13
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|sixteenBitIncrementer|halfAdder:h13|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h13|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h14
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|sixteenBitIncrementer|halfAdder:h14|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h14|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h15
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|sixteenBitIncrementer|halfAdder:h15|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h15|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h16
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|sixteenBitIncrementer|halfAdder:h16|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|sixteenBitIncrementer|halfAdder:h16|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+

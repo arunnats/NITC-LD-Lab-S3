@@ -1,0 +1,71 @@
+|srLatch
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qNot <= twoOneMux:mux_2.y
+s => nand_2.IN0
+r => nand_1.IN0
+
+
+|srLatch|andGate:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|srLatch|twoOneMux:mux_1
+y <= orGate:or_2.y
+a => a.IN1
+b => b.IN2
+
+
+|srLatch|twoOneMux:mux_1|notGate:not_1
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|srLatch|twoOneMux:mux_1|andGate:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|srLatch|twoOneMux:mux_1|andGate:and_2
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|srLatch|twoOneMux:mux_1|orGate:or_2
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|srLatch|twoOneMux:mux_2
+y <= orGate:or_2.y
+a => a.IN1
+b => b.IN2
+
+
+|srLatch|twoOneMux:mux_2|notGate:not_1
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|srLatch|twoOneMux:mux_2|andGate:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|srLatch|twoOneMux:mux_2|andGate:and_2
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|srLatch|twoOneMux:mux_2|orGate:or_2
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+

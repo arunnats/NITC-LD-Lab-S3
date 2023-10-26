@@ -1,0 +1,171 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitIncrementer/simulation/modelsim
+vand_2In
+Z1 !s110 1698338405
+!i10b 1
+!s100 C1C0<fjdbH6CEX[cNZR4C1
+IDTn2z0=VMnSX9k?[P`O?@3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1698338252
+Z4 8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitIncrementer/sixteenBitIncrementer.v
+Z5 FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitIncrementer/sixteenBitIncrementer.v
+L0 28
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1698338405.000000
+Z8 !s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitIncrementer/sixteenBitIncrementer.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitIncrementer|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitIncrementer/sixteenBitIncrementer.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitIncrementer
+Z12 tCvgOpt 0
+nand_2@in
+vhalfAdder
+R1
+!i10b 1
+!s100 ?LLQM@<kB[e@^=^]f>CX]0
+IVUdklPL=bC69KBihTVC>k3
+R2
+R0
+R3
+R4
+R5
+L0 79
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nhalf@adder
+vnot_1In
+R1
+!i10b 1
+!s100 `3:GCdkMF]W37m:c>aem52
+I9Y@oeY5k04[6D7ZZz<`fm1
+R2
+R0
+R3
+R4
+R5
+L0 55
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nnot_1@in
+vor_2In
+R1
+!i10b 1
+!s100 nTPT?IDf@G3kUQQ^z;@E^2
+I07ojIM5?eNYEYYX:jj3EA2
+R2
+R0
+R3
+R4
+R5
+L0 41
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nor_2@in
+vsixteenBitIncrementer
+R1
+!i10b 1
+!s100 lecD6?KOB7mScmT^Sd3l<2
+IE^fe[JhUf5gcJozX^j6541
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nsixteen@bit@incrementer
+vsixteenBitIncrementerTestbench
+R1
+!i10b 1
+!s100 d=B:K6SLiPD]g1]dhd1Kz2
+I8a@5=9R?k0@a54RB`UkMV2
+R2
+R0
+w1698338277
+8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitIncrementer/sixteenBitIncrementerTestbench.v
+FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitIncrementer/sixteenBitIncrementerTestbench.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitIncrementer/sixteenBitIncrementerTestbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitIncrementer|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitIncrementer/sixteenBitIncrementerTestbench.v|
+!i113 1
+R10
+R11
+R12
+nsixteen@bit@incrementer@testbench
+vxor_2In
+R1
+!i10b 1
+!s100 hNfRVMYnE40?zeZHMhhn_2
+IOzMzzL>V_LDVVDBBm>SKI0
+R2
+R0
+R3
+R4
+R5
+L0 64
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nxor_2@in

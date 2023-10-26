@@ -1,0 +1,421 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu/simulation/modelsim
+vadder16bit
+Z1 !s110 1698351401
+!i10b 1
+!s100 UUKFUR;O98UfW=Y?H82BV1
+IST:mj3lYTXdAQhT]<WanQ0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1698350136
+Z4 8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu/alu.v
+Z5 FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu/alu.v
+L0 187
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1698351401.000000
+Z8 !s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu/alu.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu/alu.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu
+Z12 tCvgOpt 0
+valu
+R1
+!i10b 1
+!s100 C2k3[cSE:=oD8ioBRcLjm1
+Idm8HeT]0kea2RJN8:k4fz2
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+valuTestbench
+R1
+!i10b 1
+!s100 eO;78OcY>4WQBff:>O3?Z3
+Ia=I2hbFf2=[3QlgSQX>`]2
+R2
+R0
+w1698351336
+8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu/aluTestbench.v
+FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu/aluTestbench.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu/aluTestbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu/aluTestbench.v|
+!i113 1
+R10
+R11
+R12
+nalu@testbench
+vandGate
+R1
+!i10b 1
+!s100 R9d?>K5YT:`UM=?ZB?_c33
+Izjg>?NQGz]NT;0n20RoNe1
+R2
+R0
+R3
+R4
+R5
+L0 300
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nand@gate
+vconvertToNegative
+R1
+!i10b 1
+!s100 HA4OiJ?eCmh[467oCBdlf3
+I7=JaehzXl17m1Bj>F9d9^0
+R2
+R0
+R3
+R4
+R5
+L0 40
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nconvert@to@negative
+vdecrementer16Bit
+R1
+!i10b 1
+!s100 ecgR;TN<R4?V]gQT6SOz<2
+If4B@j5]V6Ulo4@S@PBckn2
+R2
+R0
+R3
+R4
+R5
+L0 159
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+ndecrementer16@bit
+vfullAdder
+R1
+!i10b 1
+!s100 0n0>K7VkJA3z`ZT^I];^a2
+Ih]<m^jA2a>niSf>b`IL^n2
+R2
+R0
+R3
+R4
+R5
+L0 257
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nfull@adder
+vfullSubtractor
+R1
+!i10b 1
+!s100 d:iZEVHeQR31e[3W1:X9[1
+IBEcgb;?D@XAjATa`oAoVH3
+R2
+R0
+R3
+R4
+R5
+L0 243
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nfull@subtractor
+vhalfAdder
+R1
+!i10b 1
+!s100 2`;gfRbI<kkTPJEfRD83A3
+Ii4eg62e<88E;hmCG8XBaT3
+R2
+R0
+R3
+R4
+R5
+L0 273
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nhalf@adder
+vhalfSubtractor
+R1
+!i10b 1
+!s100 ^Uj>H<SZZoeZVV>c5DV=<0
+ICJZ5bKfEjSU6R;5H?enAZ3
+R2
+R0
+R3
+R4
+R5
+L0 286
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nhalf@subtractor
+vincrementer16Bit
+R1
+!i10b 1
+!s100 Ai[d63:mhiiM4?o[0]`?I1
+IXdS4j0=OgfT_l^]LB4Ycn0
+R2
+R0
+R3
+R4
+R5
+L0 132
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nincrementer16@bit
+vnotGate
+R1
+!i10b 1
+!s100 kcC13e:oO?_RUYVYO3ZE00
+IaCaFMd09=Xmgn;=M;YX521
+R2
+R0
+R3
+R4
+R5
+L0 327
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nnot@gate
+vorGate
+R1
+!i10b 1
+!s100 b;JSD3f8k1QXOkKn?]W4M0
+IhV8]HBkY^Zd997N?0MIRe0
+R2
+R0
+R3
+R4
+R5
+L0 313
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nor@gate
+vsixteenBitAnd
+R1
+!i10b 1
+!s100 d<k?EaIcmFGAgeX2FMgfR3
+IO4lA@?njLoG`FWULBRa?R2
+R2
+R0
+R3
+R4
+R5
+L0 52
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nsixteen@bit@and
+vsixteenBitNegator
+R1
+!i10b 1
+!s100 d56jdbiVVEK87`KCZl7_P2
+ILDP0de`W6L[Rg<k2HoIN93
+R2
+R0
+R3
+R4
+R5
+L0 107
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nsixteen@bit@negator
+vsixteenBitOr
+R1
+!i10b 1
+!s100 CmR[`UER]FRMF>lR5]WL03
+IGfSA`lg?ld@Q_Xzm4kQoU1
+R2
+R0
+R3
+R4
+R5
+L0 79
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nsixteen@bit@or
+vsubtractor16bit
+R1
+!i10b 1
+!s100 XGdn0h5?lcWMOY=_i^kzR2
+Il7KH]aT_KhSDn:97C@DL42
+R2
+R0
+R3
+R4
+R5
+L0 215
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vxorGate
+R1
+!i10b 1
+!s100 >Z]_0KiDHQNaNz2omTgWK2
+ISh[nOU6@ghUIhQMzI`_E`0
+R2
+R0
+R3
+R4
+R5
+L0 336
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nxor@gate

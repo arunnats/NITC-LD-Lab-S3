@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder/simulation/modelsim
 va_graycounter
-Z1 !s110 1696910247
+Z1 !s110 1698337688
 !i10b 1
 !s100 dbSQenUhE^>zo5H5zAI>X2
 IB7GNNK5L3:=>31ZRV0P[42
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1696910246.000000
+Z7 !s108 1698337687.000000
 Z8 !s107 c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_mf_ver|c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v|
 !i113 1
@@ -366,7 +366,7 @@ R9
 R10
 R11
 vALTERA_DEVICE_FAMILIES
-Z12 !s110 1696910246
+Z12 !s110 1698337687
 !i10b 1
 !s100 Ie0_`X3Yi6=65^n?0c5aN3
 IO1Q^aSdgS@lkiMh9jONl=3
@@ -894,7 +894,7 @@ R9
 R10
 R11
 vcda_m_cntr
-R12
+R1
 !i10b 1
 !s100 :_<zBWUomnj5alzgCU8:]0
 I3Sji;`W3h[hc9OC;aHU872
@@ -915,7 +915,7 @@ R9
 R10
 R11
 vcda_n_cntr
-R12
+R1
 !i10b 1
 !s100 nV^XiEi5JIcj0HOIXaGc03
 Ia8b]md]>5AlihH^;9M4582
@@ -936,7 +936,7 @@ R9
 R10
 R11
 vcda_scale_cntr
-R12
+R1
 !i10b 1
 !s100 4J1MoLY9=kLfU@38IMIjc2
 IOhMg=2ad=^U@fUG`HjEII3
@@ -1427,7 +1427,7 @@ R10
 R11
 n@m@f_stratixii_pll
 vMF_stratixiii_pll
-R12
+R1
 !i10b 1
 !s100 >>583Yjn4HPZb7`:4`;I@1
 I:cWILZ<^i3n0iH8MRLD]93

@@ -1,0 +1,171 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/srLatch/simulation/modelsim
+vandGate
+Z1 !s110 1698344268
+!i10b 1
+!s100 Ag``^C:=em^<hnmPa1O^53
+IfP[9`lRRg<T4?k^?Y9We:3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1698344189
+Z4 8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/srLatch/srLatch.v
+Z5 FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/srLatch/srLatch.v
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1698344267.000000
+Z8 !s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/srLatch/srLatch.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/srLatch|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/srLatch/srLatch.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/srLatch
+Z12 tCvgOpt 0
+nand@gate
+vnotGate
+R1
+!i10b 1
+!s100 SHc6Mb7Iba?4f<[3LHRj=0
+IIXG4UAbk=dM5ZT<ED@Uf`1
+R2
+R0
+R3
+R4
+R5
+L0 58
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nnot@gate
+vorGate
+R1
+!i10b 1
+!s100 an>H`P6coDm@EHb?BdC;[2
+IIKWV_jNb09XnooZAPYi8[0
+R2
+R0
+R3
+R4
+R5
+L0 44
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nor@gate
+vsrLatch
+R1
+!i10b 1
+!s100 `l:GZ`LOZIW1EaJ^]HXm:3
+Iahb50UJ3K_6`V[YOhG<`n3
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nsr@latch
+vsrLatchTestbench
+R1
+!i10b 1
+!s100 0H_U:ZJQoX<0]K@?>g:N92
+IZ?R0KQJWi9SNOLVSU3e]H0
+R2
+R0
+w1698342678
+8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/srLatch/srLatchTestbench.v
+FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/srLatch/srLatchTestbench.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1698344268.000000
+!s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/srLatch/srLatchTestbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/srLatch|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/srLatch/srLatchTestbench.v|
+!i113 1
+R10
+R11
+R12
+nsr@latch@testbench
+vtwoOneMux
+R1
+!i10b 1
+!s100 bG@CghBoe^aJVKM9=WGlD3
+I[G`Ui8Km5e^Q3Q`>RQk7a3
+R2
+R0
+R3
+R4
+R5
+L0 17
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+ntwo@one@mux
+vxorGate
+R1
+!i10b 1
+!s100 Ln>1[0M@7lHEk2S_:o2_U0
+IC8lKi>U36d@YVBbf;Z[911
+R2
+R0
+R3
+R4
+R5
+L0 67
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nxor@gate

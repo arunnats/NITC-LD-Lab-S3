@@ -1,0 +1,77 @@
+module fourBitIncrementer(
+    input [3:0] a,
+    output [3:0] b,
+    finalcarry
+);
+
+    wire carry1,carry2,carry3,carry4;
+    
+    halfAdder h1(.s(b[0]),.c(carry1),.a(a[0]),.b(1'b1));
+    halfAdder h2(.s(b[1]),.c(carry2),.a(a[1]),.b(carry1));
+    halfAdder h3(.s(b[2]),.c(carry3),.a(a[2]),.b(carry2));
+    halfAdder h4(.s(b[3]),.c(finalcarry),.a(a[3]),.b(carry3));
+
+endmodule
+
+module and_2In(
+    output y,
+    input a,
+   b
+);
+    
+    wire aNandb;
+    
+    nand nand_1 (aNandb,a,b);
+    nand nand_2 (y,aNandb,aNandb);
+
+endmodule
+
+module or_2In(
+    output y,
+    input a,
+    input b
+);
+    
+    wire aNanda, bNandb;
+    
+    nand nand_1 (aNanda,a,a);
+    nand nand_2 (bNandb,b,b);
+    nand nand_3 (y,aNanda,bNandb);
+
+endmodule
+
+module not_1In(
+    output y,
+    input a
+);
+    
+    nand nand_1 (y,a,a);
+    
+endmodule
+
+module xor_2In(
+    output y,
+    input a,
+    b
+);
+
+    wire aNandb,aNandComp,bNandComp;
+
+    nand nand_1 (aNandb,a,b);
+    nand nand_2 (aNandComp,a,aNandb);
+    nand nand_3 (bNandComp,b,aNandb);
+    nand nand_4 (y,aNandComp,bNandComp);
+
+endmodule
+
+module halfAdder(
+    output s,
+    c,
+    input a,
+    b
+);
+
+    xor_2In xor_1(.y(s),.a(a),.b(b));
+    and_2In and_1(.y(c),.a(a),.b(b));
+    
+endmodule

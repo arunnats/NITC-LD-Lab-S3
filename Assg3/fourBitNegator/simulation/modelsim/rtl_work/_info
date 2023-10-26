@@ -1,0 +1,148 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/fourBitNegator/simulation/modelsim
+vand_2In
+Z1 !s110 1698340819
+!i10b 1
+!s100 WTFjURoUf56c]@_M13UUd2
+I0cUk_ZC2d0MY;e94oKKOX1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1698340662
+Z4 8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/fourBitNegator/fourBitNegator.v
+Z5 FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/fourBitNegator/fourBitNegator.v
+L0 34
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1698340819.000000
+Z8 !s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/fourBitNegator/fourBitNegator.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/fourBitNegator|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/fourBitNegator/fourBitNegator.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/fourBitNegator
+Z12 tCvgOpt 0
+nand_2@in
+vfourBitIncrementer
+R1
+!i10b 1
+!s100 >fBAGXB70Cm2hV`P8^c_<0
+I7`bDmzLMWgcMVOTgVk=fc3
+R2
+R0
+R3
+R4
+R5
+L0 19
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nfour@bit@incrementer
+vhalfAdder
+R1
+!i10b 1
+!s100 J75kl?P?Fm9]Qh@1bfT8_0
+I3f>FAEYDI>^S9l7l1SzL_0
+R2
+R0
+R3
+R4
+R5
+L0 85
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nhalf@adder
+vnot_1In
+R1
+!i10b 1
+!s100 ldC_EMU4:T^PPQMj6Vh;K1
+IVSQ;J^jTT3AU7VSgYDbbV1
+R2
+R0
+R3
+R4
+R5
+L0 61
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nnot_1@in
+vor_2In
+R1
+!i10b 1
+!s100 j0PG60F;PJA^iFTaIi4o<1
+Ia;`7UiaJf9GKaX0eg]bA^2
+R2
+R0
+R3
+R4
+R5
+L0 47
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nor_2@in
+vxor_2In
+R1
+!i10b 1
+!s100 ;LNohXChRHnZWF1dEed;G0
+IFb;Km^0R2^fh=OIlSc;@81
+R2
+R0
+R3
+R4
+R5
+L0 70
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nxor_2@in

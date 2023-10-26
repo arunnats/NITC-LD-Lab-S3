@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder/simulation/modelsim
 vadder
-Z1 !s110 1696910254
+Z1 !s110 1698337695
 !i10b 1
 !s100 WkTVKX`kaPo]BBP8XXbNH1
 InVaRQ`kXGDdCL38Z3OoKb1
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1696910254.000000
+Z7 !s108 1698337695.000000
 Z8 !s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder/eight_bit_adder.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder/eight_bit_adder.v|
 !i113 1
@@ -55,11 +55,11 @@ R12
 veight_bit_adder_testbench
 R1
 !i10b 1
-!s100 HQndJVSID862IIC4R=2EN2
-I6a5KFP9c0@mUiOOIjL3Wj1
+!s100 V0SQLFJ^9XYLTni?8TV;H0
+I<O[EBNJ]LXK?zo<z0R0gH3
 R2
 R0
-w1696910144
+w1696915878
 8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder/eight_bit_adder_testbench.v
 FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/eight_bit_adder/eight_bit_adder_testbench.v
 L0 1

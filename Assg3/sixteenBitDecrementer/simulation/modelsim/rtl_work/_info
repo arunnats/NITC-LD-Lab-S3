@@ -1,0 +1,171 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitDecrementer/simulation/modelsim
+vand_2In
+Z1 !s110 1698341194
+!i10b 1
+!s100 _HT;6P7=cIA=Fb@`=_DiR2
+IK_kX2fz@PW>M:MlfH1E<92
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1698338525
+Z4 8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitDecrementer/sixteenBitDecrementer.v
+Z5 FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitDecrementer/sixteenBitDecrementer.v
+L0 29
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1698341194.000000
+Z8 !s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitDecrementer/sixteenBitDecrementer.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitDecrementer|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitDecrementer/sixteenBitDecrementer.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/sixteenBitDecrementer
+Z12 tCvgOpt 0
+nand_2@in
+vfullAdder
+R1
+!i10b 1
+!s100 [A61mKKGBKhAh@fA<4o[e3
+I=4[Ya7Si`WU]Xz4P7Shm@3
+R2
+R0
+R3
+R4
+R5
+L0 92
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nfull@adder
+vhalfAdder
+R1
+!i10b 1
+!s100 5WZbQ_ohVn;;ooOPfL^=a0
+IoU]<<]@8KJ97QKNYD0>3N0
+R2
+R0
+R3
+R4
+R5
+L0 80
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nhalf@adder
+vnot_1In
+R1
+!i10b 1
+!s100 _TnlfI`;^5VbHJNiS@J_c1
+Ib^Vf1X?64TjFajG4f2LI?3
+R2
+R0
+R3
+R4
+R5
+L0 56
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nnot_1@in
+vor_2In
+R1
+!i10b 1
+!s100 `QcNAgzWHi5iZ?L9VCS0[2
+Il6_M_GjdBHTZP;adPEcJo3
+R2
+R0
+R3
+R4
+R5
+L0 42
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nor_2@in
+vsixteenBitDecrementer
+R1
+!i10b 1
+!s100 Ug3WGEiE8N6EOhSf=c??E3
+Ial4;`T?]z>b>bD;ILBZhV3
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nsixteen@bit@decrementer
+vxor_2In
+R1
+!i10b 1
+!s100 dhQT3Ad7g8Th[=]]ZX80d1
+Ia`VG6n_hDHiZGebdm@_gD3
+R2
+R0
+R3
+R4
+R5
+L0 65
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nxor_2@in

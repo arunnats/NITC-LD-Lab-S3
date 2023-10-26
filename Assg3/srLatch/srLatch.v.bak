@@ -1,0 +1,12 @@
+module srLatch(
+	output q,
+	qNot,
+	input s,
+	r
+);
+	
+   wire q,qNot;
+   nand(q,qNot,s);
+   nand(qNot,q,r);
+	
+endmodule

@@ -1,0 +1,111 @@
+|fourBitNegator
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] << fourBitIncrementer:inc.b
+b[1] << fourBitIncrementer:inc.b
+b[2] << fourBitIncrementer:inc.b
+b[3] << fourBitIncrementer:inc.b
+b[4] << b[4].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fourBitNegator|fourBitIncrementer:inc
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] <= halfAdder:h1.s
+b[1] <= halfAdder:h2.s
+b[2] <= halfAdder:h3.s
+b[3] <= halfAdder:h4.s
+finalcarry[0] <= halfAdder:h4.c
+finalcarry[1] <= halfAdder:h4.c
+finalcarry[2] <= halfAdder:h4.c
+finalcarry[3] <= halfAdder:h4.c
+
+
+|fourBitNegator|fourBitIncrementer:inc|halfAdder:h1
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|fourBitNegator|fourBitIncrementer:inc|halfAdder:h1|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|fourBitNegator|fourBitIncrementer:inc|halfAdder:h1|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|fourBitNegator|fourBitIncrementer:inc|halfAdder:h2
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|fourBitNegator|fourBitIncrementer:inc|halfAdder:h2|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|fourBitNegator|fourBitIncrementer:inc|halfAdder:h2|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|fourBitNegator|fourBitIncrementer:inc|halfAdder:h3
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|fourBitNegator|fourBitIncrementer:inc|halfAdder:h3|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|fourBitNegator|fourBitIncrementer:inc|halfAdder:h3|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|fourBitNegator|fourBitIncrementer:inc|halfAdder:h4
+s <= xor_2In:xor_1.y
+c <= and_2In:and_1.y
+a => a.IN2
+b => b.IN2
+
+
+|fourBitNegator|fourBitIncrementer:inc|halfAdder:h4|xor_2In:xor_1
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|fourBitNegator|fourBitIncrementer:inc|halfAdder:h4|and_2In:and_1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+

@@ -1,0 +1,7863 @@
+|alu
+x[0] => x[0].IN9
+x[1] => x[1].IN9
+x[2] => x[2].IN9
+x[3] => x[3].IN9
+x[4] => x[4].IN9
+x[5] => x[5].IN9
+x[6] => x[6].IN9
+x[7] => x[7].IN9
+x[8] => x[8].IN9
+x[9] => x[9].IN9
+x[10] => x[10].IN9
+x[11] => x[11].IN9
+x[12] => x[12].IN9
+x[13] => x[13].IN9
+x[14] => x[14].IN9
+x[15] => x[15].IN9
+y[0] => y[0].IN9
+y[1] => y[1].IN9
+y[2] => y[2].IN9
+y[3] => y[3].IN9
+y[4] => y[4].IN9
+y[5] => y[5].IN9
+y[6] => y[6].IN9
+y[7] => y[7].IN9
+y[8] => y[8].IN9
+y[9] => y[9].IN9
+y[10] => y[10].IN9
+y[11] => y[11].IN9
+y[12] => y[12].IN9
+y[13] => y[13].IN9
+y[14] => y[14].IN9
+y[15] => y[15].IN9
+a[0] << adder16bit:add.s
+a[1] << adder16bit:add.s
+a[2] << adder16bit:add.s
+a[3] << adder16bit:add.s
+a[4] << adder16bit:add.s
+a[5] << adder16bit:add.s
+a[6] << adder16bit:add.s
+a[7] << adder16bit:add.s
+a[8] << adder16bit:add.s
+a[9] << adder16bit:add.s
+a[10] << adder16bit:add.s
+a[11] << adder16bit:add.s
+a[12] << adder16bit:add.s
+a[13] << adder16bit:add.s
+a[14] << adder16bit:add.s
+a[15] << adder16bit:add.s
+b[0] << subtractor16bit:sub0.difference
+b[1] << subtractor16bit:sub0.difference
+b[2] << subtractor16bit:sub0.difference
+b[3] << subtractor16bit:sub0.difference
+b[4] << subtractor16bit:sub0.difference
+b[5] << subtractor16bit:sub0.difference
+b[6] << subtractor16bit:sub0.difference
+b[7] << subtractor16bit:sub0.difference
+b[8] << subtractor16bit:sub0.difference
+b[9] << subtractor16bit:sub0.difference
+b[10] << subtractor16bit:sub0.difference
+b[11] << subtractor16bit:sub0.difference
+b[12] << subtractor16bit:sub0.difference
+b[13] << subtractor16bit:sub0.difference
+b[14] << subtractor16bit:sub0.difference
+b[15] << subtractor16bit:sub0.difference
+c[0] << subtractor16bit:sub1.difference
+c[1] << subtractor16bit:sub1.difference
+c[2] << subtractor16bit:sub1.difference
+c[3] << subtractor16bit:sub1.difference
+c[4] << subtractor16bit:sub1.difference
+c[5] << subtractor16bit:sub1.difference
+c[6] << subtractor16bit:sub1.difference
+c[7] << subtractor16bit:sub1.difference
+c[8] << subtractor16bit:sub1.difference
+c[9] << subtractor16bit:sub1.difference
+c[10] << subtractor16bit:sub1.difference
+c[11] << subtractor16bit:sub1.difference
+c[12] << subtractor16bit:sub1.difference
+c[13] << subtractor16bit:sub1.difference
+c[14] << subtractor16bit:sub1.difference
+c[15] << subtractor16bit:sub1.difference
+d << notGate:not0.port0
+e << notGate:not1.port0
+f[0] << convertToNegative:con0.b
+f[1] << convertToNegative:con0.b
+f[2] << convertToNegative:con0.b
+f[3] << convertToNegative:con0.b
+f[4] << convertToNegative:con0.b
+f[5] << convertToNegative:con0.b
+f[6] << convertToNegative:con0.b
+f[7] << convertToNegative:con0.b
+f[8] << convertToNegative:con0.b
+f[9] << convertToNegative:con0.b
+f[10] << convertToNegative:con0.b
+f[11] << convertToNegative:con0.b
+f[12] << convertToNegative:con0.b
+f[13] << convertToNegative:con0.b
+f[14] << convertToNegative:con0.b
+f[15] << convertToNegative:con0.b
+g[0] << convertToNegative:con1.b
+g[1] << convertToNegative:con1.b
+g[2] << convertToNegative:con1.b
+g[3] << convertToNegative:con1.b
+g[4] << convertToNegative:con1.b
+g[5] << convertToNegative:con1.b
+g[6] << convertToNegative:con1.b
+g[7] << convertToNegative:con1.b
+g[8] << convertToNegative:con1.b
+g[9] << convertToNegative:con1.b
+g[10] << convertToNegative:con1.b
+g[11] << convertToNegative:con1.b
+g[12] << convertToNegative:con1.b
+g[13] << convertToNegative:con1.b
+g[14] << convertToNegative:con1.b
+g[15] << convertToNegative:con1.b
+h[0] << convertToNegative:con2.b
+h[1] << convertToNegative:con2.b
+h[2] << convertToNegative:con2.b
+h[3] << convertToNegative:con2.b
+h[4] << convertToNegative:con2.b
+h[5] << convertToNegative:con2.b
+h[6] << convertToNegative:con2.b
+h[7] << convertToNegative:con2.b
+h[8] << convertToNegative:con2.b
+h[9] << convertToNegative:con2.b
+h[10] << convertToNegative:con2.b
+h[11] << convertToNegative:con2.b
+h[12] << convertToNegative:con2.b
+h[13] << convertToNegative:con2.b
+h[14] << convertToNegative:con2.b
+h[15] << convertToNegative:con2.b
+i[0] << sixteenBitNegator:neg0.b
+i[1] << sixteenBitNegator:neg0.b
+i[2] << sixteenBitNegator:neg0.b
+i[3] << sixteenBitNegator:neg0.b
+i[4] << sixteenBitNegator:neg0.b
+i[5] << sixteenBitNegator:neg0.b
+i[6] << sixteenBitNegator:neg0.b
+i[7] << sixteenBitNegator:neg0.b
+i[8] << sixteenBitNegator:neg0.b
+i[9] << sixteenBitNegator:neg0.b
+i[10] << sixteenBitNegator:neg0.b
+i[11] << sixteenBitNegator:neg0.b
+i[12] << sixteenBitNegator:neg0.b
+i[13] << sixteenBitNegator:neg0.b
+i[14] << sixteenBitNegator:neg0.b
+i[15] << sixteenBitNegator:neg0.b
+j[0] << sixteenBitNegator:neg1.b
+j[1] << sixteenBitNegator:neg1.b
+j[2] << sixteenBitNegator:neg1.b
+j[3] << sixteenBitNegator:neg1.b
+j[4] << sixteenBitNegator:neg1.b
+j[5] << sixteenBitNegator:neg1.b
+j[6] << sixteenBitNegator:neg1.b
+j[7] << sixteenBitNegator:neg1.b
+j[8] << sixteenBitNegator:neg1.b
+j[9] << sixteenBitNegator:neg1.b
+j[10] << sixteenBitNegator:neg1.b
+j[11] << sixteenBitNegator:neg1.b
+j[12] << sixteenBitNegator:neg1.b
+j[13] << sixteenBitNegator:neg1.b
+j[14] << sixteenBitNegator:neg1.b
+j[15] << sixteenBitNegator:neg1.b
+k[0] << incrementer16Bit:inc0.b
+k[1] << incrementer16Bit:inc0.b
+k[2] << incrementer16Bit:inc0.b
+k[3] << incrementer16Bit:inc0.b
+k[4] << incrementer16Bit:inc0.b
+k[5] << incrementer16Bit:inc0.b
+k[6] << incrementer16Bit:inc0.b
+k[7] << incrementer16Bit:inc0.b
+k[8] << incrementer16Bit:inc0.b
+k[9] << incrementer16Bit:inc0.b
+k[10] << incrementer16Bit:inc0.b
+k[11] << incrementer16Bit:inc0.b
+k[12] << incrementer16Bit:inc0.b
+k[13] << incrementer16Bit:inc0.b
+k[14] << incrementer16Bit:inc0.b
+k[15] << incrementer16Bit:inc0.b
+l[0] << incrementer16Bit:inc1.b
+l[1] << incrementer16Bit:inc1.b
+l[2] << incrementer16Bit:inc1.b
+l[3] << incrementer16Bit:inc1.b
+l[4] << incrementer16Bit:inc1.b
+l[5] << incrementer16Bit:inc1.b
+l[6] << incrementer16Bit:inc1.b
+l[7] << incrementer16Bit:inc1.b
+l[8] << incrementer16Bit:inc1.b
+l[9] << incrementer16Bit:inc1.b
+l[10] << incrementer16Bit:inc1.b
+l[11] << incrementer16Bit:inc1.b
+l[12] << incrementer16Bit:inc1.b
+l[13] << incrementer16Bit:inc1.b
+l[14] << incrementer16Bit:inc1.b
+l[15] << incrementer16Bit:inc1.b
+m[0] << decrementer16Bit:dec0.b
+m[1] << decrementer16Bit:dec0.b
+m[2] << decrementer16Bit:dec0.b
+m[3] << decrementer16Bit:dec0.b
+m[4] << decrementer16Bit:dec0.b
+m[5] << decrementer16Bit:dec0.b
+m[6] << decrementer16Bit:dec0.b
+m[7] << decrementer16Bit:dec0.b
+m[8] << decrementer16Bit:dec0.b
+m[9] << decrementer16Bit:dec0.b
+m[10] << decrementer16Bit:dec0.b
+m[11] << decrementer16Bit:dec0.b
+m[12] << decrementer16Bit:dec0.b
+m[13] << decrementer16Bit:dec0.b
+m[14] << decrementer16Bit:dec0.b
+m[15] << decrementer16Bit:dec0.b
+n[0] << decrementer16Bit:dec1.b
+n[1] << decrementer16Bit:dec1.b
+n[2] << decrementer16Bit:dec1.b
+n[3] << decrementer16Bit:dec1.b
+n[4] << decrementer16Bit:dec1.b
+n[5] << decrementer16Bit:dec1.b
+n[6] << decrementer16Bit:dec1.b
+n[7] << decrementer16Bit:dec1.b
+n[8] << decrementer16Bit:dec1.b
+n[9] << decrementer16Bit:dec1.b
+n[10] << decrementer16Bit:dec1.b
+n[11] << decrementer16Bit:dec1.b
+n[12] << decrementer16Bit:dec1.b
+n[13] << decrementer16Bit:dec1.b
+n[14] << decrementer16Bit:dec1.b
+n[15] << decrementer16Bit:dec1.b
+o[0] << sixteenBitAnd:and16.port2
+o[1] << sixteenBitAnd:and16.port2
+o[2] << sixteenBitAnd:and16.port2
+o[3] << sixteenBitAnd:and16.port2
+o[4] << sixteenBitAnd:and16.port2
+o[5] << sixteenBitAnd:and16.port2
+o[6] << sixteenBitAnd:and16.port2
+o[7] << sixteenBitAnd:and16.port2
+o[8] << sixteenBitAnd:and16.port2
+o[9] << sixteenBitAnd:and16.port2
+o[10] << sixteenBitAnd:and16.port2
+o[11] << sixteenBitAnd:and16.port2
+o[12] << sixteenBitAnd:and16.port2
+o[13] << sixteenBitAnd:and16.port2
+o[14] << sixteenBitAnd:and16.port2
+o[15] << sixteenBitAnd:and16.port2
+p[0] << sixteenBitOr:or16.port2
+p[1] << sixteenBitOr:or16.port2
+p[2] << sixteenBitOr:or16.port2
+p[3] << sixteenBitOr:or16.port2
+p[4] << sixteenBitOr:or16.port2
+p[5] << sixteenBitOr:or16.port2
+p[6] << sixteenBitOr:or16.port2
+p[7] << sixteenBitOr:or16.port2
+p[8] << sixteenBitOr:or16.port2
+p[9] << sixteenBitOr:or16.port2
+p[10] << sixteenBitOr:or16.port2
+p[11] << sixteenBitOr:or16.port2
+p[12] << sixteenBitOr:or16.port2
+p[13] << sixteenBitOr:or16.port2
+p[14] << sixteenBitOr:or16.port2
+p[15] << sixteenBitOr:or16.port2
+
+
+|alu|adder16bit:add
+s[0] <= fullAdder:FA1.port0
+s[1] <= fullAdder:FA2.port0
+s[2] <= fullAdder:FA3.port0
+s[3] <= fullAdder:FA4.port0
+s[4] <= fullAdder:FA5.port0
+s[5] <= fullAdder:FA6.port0
+s[6] <= fullAdder:FA7.port0
+s[7] <= fullAdder:FA8.port0
+s[8] <= fullAdder:FA9.port0
+s[9] <= fullAdder:FA10.port0
+s[10] <= fullAdder:FA11.port0
+s[11] <= fullAdder:FA12.port0
+s[12] <= fullAdder:FA13.port0
+s[13] <= fullAdder:FA14.port0
+s[14] <= fullAdder:FA15.port0
+s[15] <= fullAdder:FA16.port0
+c[0] <= c[0].DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= c[1].DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= c[2].DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= c[3].DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= c[4].DB_MAX_OUTPUT_PORT_TYPE
+c[5] <= c[5].DB_MAX_OUTPUT_PORT_TYPE
+c[6] <= c[6].DB_MAX_OUTPUT_PORT_TYPE
+c[7] <= c[7].DB_MAX_OUTPUT_PORT_TYPE
+c[8] <= c[8].DB_MAX_OUTPUT_PORT_TYPE
+c[9] <= c[9].DB_MAX_OUTPUT_PORT_TYPE
+c[10] <= c[10].DB_MAX_OUTPUT_PORT_TYPE
+c[11] <= c[11].DB_MAX_OUTPUT_PORT_TYPE
+c[12] <= c[12].DB_MAX_OUTPUT_PORT_TYPE
+c[13] <= c[13].DB_MAX_OUTPUT_PORT_TYPE
+c[14] <= c[14].DB_MAX_OUTPUT_PORT_TYPE
+c[15] <= fullAdder:FA16.port1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+
+
+|alu|adder16bit:add|fullAdder:FA1
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA1|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA1|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA1|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA1|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA1|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA1|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA1|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA2
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA2|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA2|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA2|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA2|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA2|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA2|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA2|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA3
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA3|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA3|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA3|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA3|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA3|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA3|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA3|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA4
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA4|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA4|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA4|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA4|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA4|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA4|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA4|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA5
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA5|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA5|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA5|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA5|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA5|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA5|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA5|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA6
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA6|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA6|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA6|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA6|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA6|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA6|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA6|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA7
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA7|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA7|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA7|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA7|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA7|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA7|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA7|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA8
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA8|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA8|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA8|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA8|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA8|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA8|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA8|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA9
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA9|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA9|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA9|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA9|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA9|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA9|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA9|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA10
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA10|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA10|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA10|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA10|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA10|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA10|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA10|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA11
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA11|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA11|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA11|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA11|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA11|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA11|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA11|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA12
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA12|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA12|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA12|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA12|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA12|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA12|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA12|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA13
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA13|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA13|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA13|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA13|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA13|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA13|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA13|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA14
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA14|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA14|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA14|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA14|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA14|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA14|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA14|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA15
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA15|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA15|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA15|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA15|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA15|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA15|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA15|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA16
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA16|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA16|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA16|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA16|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|adder16bit:add|fullAdder:FA16|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA16|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|adder16bit:add|fullAdder:FA16|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0
+borrow[0] <= borrow[0].DB_MAX_OUTPUT_PORT_TYPE
+borrow[1] <= borrow[1].DB_MAX_OUTPUT_PORT_TYPE
+borrow[2] <= borrow[2].DB_MAX_OUTPUT_PORT_TYPE
+borrow[3] <= borrow[3].DB_MAX_OUTPUT_PORT_TYPE
+borrow[4] <= borrow[4].DB_MAX_OUTPUT_PORT_TYPE
+borrow[5] <= borrow[5].DB_MAX_OUTPUT_PORT_TYPE
+borrow[6] <= borrow[6].DB_MAX_OUTPUT_PORT_TYPE
+borrow[7] <= borrow[7].DB_MAX_OUTPUT_PORT_TYPE
+borrow[8] <= borrow[8].DB_MAX_OUTPUT_PORT_TYPE
+borrow[9] <= borrow[9].DB_MAX_OUTPUT_PORT_TYPE
+borrow[10] <= borrow[10].DB_MAX_OUTPUT_PORT_TYPE
+borrow[11] <= borrow[11].DB_MAX_OUTPUT_PORT_TYPE
+borrow[12] <= borrow[12].DB_MAX_OUTPUT_PORT_TYPE
+borrow[13] <= borrow[13].DB_MAX_OUTPUT_PORT_TYPE
+borrow[14] <= borrow[14].DB_MAX_OUTPUT_PORT_TYPE
+borrow[15] <= fullSubtractor:FS16.port0
+difference[0] <= fullSubtractor:FS1.port1
+difference[1] <= fullSubtractor:FS2.port1
+difference[2] <= fullSubtractor:FS3.port1
+difference[3] <= fullSubtractor:FS4.port1
+difference[4] <= fullSubtractor:FS5.port1
+difference[5] <= fullSubtractor:FS6.port1
+difference[6] <= fullSubtractor:FS7.port1
+difference[7] <= fullSubtractor:FS8.port1
+difference[8] <= fullSubtractor:FS9.port1
+difference[9] <= fullSubtractor:FS10.port1
+difference[10] <= fullSubtractor:FS11.port1
+difference[11] <= fullSubtractor:FS12.port1
+difference[12] <= fullSubtractor:FS13.port1
+difference[13] <= fullSubtractor:FS14.port1
+difference[14] <= fullSubtractor:FS15.port1
+difference[15] <= fullSubtractor:FS16.port1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS1
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS1|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS1|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS1|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS1|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS1|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS1|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS1|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS1|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS1|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS2
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS2|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS2|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS2|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS2|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS2|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS2|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS2|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS2|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS2|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS3
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS3|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS3|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS3|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS3|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS3|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS3|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS3|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS3|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS3|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS4
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS4|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS4|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS4|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS4|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS4|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS4|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS4|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS4|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS4|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS5
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS5|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS5|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS5|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS5|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS5|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS5|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS5|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS5|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS5|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS6
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS6|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS6|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS6|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS6|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS6|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS6|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS6|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS6|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS6|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS7
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS7|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS7|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS7|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS7|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS7|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS7|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS7|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS7|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS7|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS8
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS8|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS8|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS8|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS8|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS8|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS8|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS8|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS8|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS8|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS9
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS9|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS9|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS9|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS9|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS9|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS9|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS9|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS9|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS9|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS10
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS10|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS10|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS10|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS10|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS10|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS10|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS10|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS10|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS10|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS11
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS11|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS11|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS11|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS11|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS11|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS11|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS11|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS11|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS11|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS12
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS12|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS12|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS12|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS12|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS12|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS12|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS12|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS12|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS12|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS13
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS13|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS13|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS13|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS13|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS13|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS13|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS13|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS13|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS13|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS14
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS14|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS14|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS14|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS14|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS14|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS14|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS14|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS14|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS14|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS15
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS15|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS15|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS15|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS15|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS15|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS15|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS15|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS15|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS15|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS16
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS16|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS16|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS16|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS16|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS16|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS16|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS16|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS16|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub0|fullSubtractor:FS16|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1
+borrow[0] <= borrow[0].DB_MAX_OUTPUT_PORT_TYPE
+borrow[1] <= borrow[1].DB_MAX_OUTPUT_PORT_TYPE
+borrow[2] <= borrow[2].DB_MAX_OUTPUT_PORT_TYPE
+borrow[3] <= borrow[3].DB_MAX_OUTPUT_PORT_TYPE
+borrow[4] <= borrow[4].DB_MAX_OUTPUT_PORT_TYPE
+borrow[5] <= borrow[5].DB_MAX_OUTPUT_PORT_TYPE
+borrow[6] <= borrow[6].DB_MAX_OUTPUT_PORT_TYPE
+borrow[7] <= borrow[7].DB_MAX_OUTPUT_PORT_TYPE
+borrow[8] <= borrow[8].DB_MAX_OUTPUT_PORT_TYPE
+borrow[9] <= borrow[9].DB_MAX_OUTPUT_PORT_TYPE
+borrow[10] <= borrow[10].DB_MAX_OUTPUT_PORT_TYPE
+borrow[11] <= borrow[11].DB_MAX_OUTPUT_PORT_TYPE
+borrow[12] <= borrow[12].DB_MAX_OUTPUT_PORT_TYPE
+borrow[13] <= borrow[13].DB_MAX_OUTPUT_PORT_TYPE
+borrow[14] <= borrow[14].DB_MAX_OUTPUT_PORT_TYPE
+borrow[15] <= fullSubtractor:FS16.port0
+difference[0] <= fullSubtractor:FS1.port1
+difference[1] <= fullSubtractor:FS2.port1
+difference[2] <= fullSubtractor:FS3.port1
+difference[3] <= fullSubtractor:FS4.port1
+difference[4] <= fullSubtractor:FS5.port1
+difference[5] <= fullSubtractor:FS6.port1
+difference[6] <= fullSubtractor:FS7.port1
+difference[7] <= fullSubtractor:FS8.port1
+difference[8] <= fullSubtractor:FS9.port1
+difference[9] <= fullSubtractor:FS10.port1
+difference[10] <= fullSubtractor:FS11.port1
+difference[11] <= fullSubtractor:FS12.port1
+difference[12] <= fullSubtractor:FS13.port1
+difference[13] <= fullSubtractor:FS14.port1
+difference[14] <= fullSubtractor:FS15.port1
+difference[15] <= fullSubtractor:FS16.port1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS1
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS1|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS1|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS1|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS1|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS1|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS1|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS1|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS1|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS1|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS2
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS2|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS2|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS2|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS2|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS2|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS2|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS2|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS2|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS2|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS3
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS3|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS3|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS3|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS3|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS3|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS3|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS3|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS3|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS3|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS4
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS4|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS4|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS4|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS4|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS4|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS4|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS4|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS4|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS4|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS5
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS5|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS5|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS5|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS5|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS5|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS5|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS5|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS5|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS5|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS6
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS6|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS6|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS6|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS6|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS6|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS6|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS6|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS6|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS6|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS7
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS7|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS7|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS7|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS7|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS7|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS7|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS7|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS7|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS7|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS8
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS8|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS8|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS8|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS8|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS8|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS8|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS8|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS8|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS8|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS9
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS9|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS9|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS9|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS9|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS9|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS9|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS9|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS9|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS9|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS10
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS10|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS10|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS10|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS10|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS10|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS10|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS10|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS10|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS10|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS11
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS11|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS11|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS11|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS11|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS11|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS11|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS11|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS11|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS11|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS12
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS12|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS12|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS12|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS12|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS12|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS12|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS12|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS12|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS12|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS13
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS13|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS13|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS13|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS13|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS13|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS13|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS13|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS13|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS13|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS14
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS14|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS14|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS14|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS14|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS14|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS14|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS14|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS14|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS14|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS15
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS15|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS15|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS15|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS15|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS15|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS15|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS15|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS15|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS15|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS16
+borrow <= orGate:or_0.y
+diff <= halfSubtractor:fs1.diff
+a => a.IN1
+b => b.IN1
+bin => bin.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS16|halfSubtractor:fs0
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS16|halfSubtractor:fs0|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS16|halfSubtractor:fs0|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS16|halfSubtractor:fs0|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS16|halfSubtractor:fs1
+borrow <= andGate:and0.port0
+diff <= xorGate:xor_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS16|halfSubtractor:fs1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS16|halfSubtractor:fs1|notGate:not_0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS16|halfSubtractor:fs1|andGate:and0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|subtractor16bit:sub1|fullSubtractor:FS16|orGate:or_0
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|notGate:not0
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|notGate:not1
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|convertToNegative:con0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+b[0] <= incrementer16Bit:inc0.b
+b[1] <= incrementer16Bit:inc0.b
+b[2] <= incrementer16Bit:inc0.b
+b[3] <= incrementer16Bit:inc0.b
+b[4] <= incrementer16Bit:inc0.b
+b[5] <= incrementer16Bit:inc0.b
+b[6] <= incrementer16Bit:inc0.b
+b[7] <= incrementer16Bit:inc0.b
+b[8] <= incrementer16Bit:inc0.b
+b[9] <= incrementer16Bit:inc0.b
+b[10] <= incrementer16Bit:inc0.b
+b[11] <= incrementer16Bit:inc0.b
+b[12] <= incrementer16Bit:inc0.b
+b[13] <= incrementer16Bit:inc0.b
+b[14] <= incrementer16Bit:inc0.b
+b[15] <= incrementer16Bit:inc0.b
+
+
+|alu|convertToNegative:con0|sixteenBitNegator:neg0
+a[0] => b[0].DATAIN
+a[1] => b[1].DATAIN
+a[2] => b[2].DATAIN
+a[3] => b[3].DATAIN
+a[4] => b[4].DATAIN
+a[5] => b[5].DATAIN
+a[6] => b[6].DATAIN
+a[7] => b[7].DATAIN
+a[8] => b[8].DATAIN
+a[9] => b[9].DATAIN
+a[10] => b[10].DATAIN
+a[11] => b[11].DATAIN
+a[12] => b[12].DATAIN
+a[13] => b[13].DATAIN
+a[14] => b[14].DATAIN
+a[15] => b[15].DATAIN
+b[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+b[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+b[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+b[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+b[4] <= a[4].DB_MAX_OUTPUT_PORT_TYPE
+b[5] <= a[5].DB_MAX_OUTPUT_PORT_TYPE
+b[6] <= a[6].DB_MAX_OUTPUT_PORT_TYPE
+b[7] <= a[7].DB_MAX_OUTPUT_PORT_TYPE
+b[8] <= a[8].DB_MAX_OUTPUT_PORT_TYPE
+b[9] <= a[9].DB_MAX_OUTPUT_PORT_TYPE
+b[10] <= a[10].DB_MAX_OUTPUT_PORT_TYPE
+b[11] <= a[11].DB_MAX_OUTPUT_PORT_TYPE
+b[12] <= a[12].DB_MAX_OUTPUT_PORT_TYPE
+b[13] <= a[13].DB_MAX_OUTPUT_PORT_TYPE
+b[14] <= a[14].DB_MAX_OUTPUT_PORT_TYPE
+b[15] <= a[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+b[0] <= halfAdder:h1.s
+b[1] <= halfAdder:h2.s
+b[2] <= halfAdder:h3.s
+b[3] <= halfAdder:h4.s
+b[4] <= halfAdder:h5.s
+b[5] <= halfAdder:h6.s
+b[6] <= halfAdder:h7.s
+b[7] <= halfAdder:h8.s
+b[8] <= halfAdder:h9.s
+b[9] <= halfAdder:h10.s
+b[10] <= halfAdder:h11.s
+b[11] <= halfAdder:h12.s
+b[12] <= halfAdder:h13.s
+b[13] <= halfAdder:h14.s
+b[14] <= halfAdder:h15.s
+b[15] <= halfAdder:h16.s
+finalcarry[0] <= halfAdder:h16.c
+finalcarry[1] <= halfAdder:h16.c
+finalcarry[2] <= halfAdder:h16.c
+finalcarry[3] <= halfAdder:h16.c
+finalcarry[4] <= halfAdder:h16.c
+finalcarry[5] <= halfAdder:h16.c
+finalcarry[6] <= halfAdder:h16.c
+finalcarry[7] <= halfAdder:h16.c
+finalcarry[8] <= halfAdder:h16.c
+finalcarry[9] <= halfAdder:h16.c
+finalcarry[10] <= halfAdder:h16.c
+finalcarry[11] <= halfAdder:h16.c
+finalcarry[12] <= halfAdder:h16.c
+finalcarry[13] <= halfAdder:h16.c
+finalcarry[14] <= halfAdder:h16.c
+finalcarry[15] <= halfAdder:h16.c
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h3
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h3|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h3|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h4
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h4|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h4|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h5
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h5|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h5|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h6
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h6|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h6|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h7
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h7|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h7|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h8
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h8|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h8|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h9
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h9|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h9|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h10
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h10|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h10|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h11
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h11|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h11|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h12
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h12|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h12|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h13
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h13|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h13|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h14
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h14|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h14|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h15
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h15|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h15|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h16
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h16|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con0|incrementer16Bit:inc0|halfAdder:h16|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+b[0] <= incrementer16Bit:inc0.b
+b[1] <= incrementer16Bit:inc0.b
+b[2] <= incrementer16Bit:inc0.b
+b[3] <= incrementer16Bit:inc0.b
+b[4] <= incrementer16Bit:inc0.b
+b[5] <= incrementer16Bit:inc0.b
+b[6] <= incrementer16Bit:inc0.b
+b[7] <= incrementer16Bit:inc0.b
+b[8] <= incrementer16Bit:inc0.b
+b[9] <= incrementer16Bit:inc0.b
+b[10] <= incrementer16Bit:inc0.b
+b[11] <= incrementer16Bit:inc0.b
+b[12] <= incrementer16Bit:inc0.b
+b[13] <= incrementer16Bit:inc0.b
+b[14] <= incrementer16Bit:inc0.b
+b[15] <= incrementer16Bit:inc0.b
+
+
+|alu|convertToNegative:con1|sixteenBitNegator:neg0
+a[0] => b[0].DATAIN
+a[1] => b[1].DATAIN
+a[2] => b[2].DATAIN
+a[3] => b[3].DATAIN
+a[4] => b[4].DATAIN
+a[5] => b[5].DATAIN
+a[6] => b[6].DATAIN
+a[7] => b[7].DATAIN
+a[8] => b[8].DATAIN
+a[9] => b[9].DATAIN
+a[10] => b[10].DATAIN
+a[11] => b[11].DATAIN
+a[12] => b[12].DATAIN
+a[13] => b[13].DATAIN
+a[14] => b[14].DATAIN
+a[15] => b[15].DATAIN
+b[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+b[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+b[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+b[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+b[4] <= a[4].DB_MAX_OUTPUT_PORT_TYPE
+b[5] <= a[5].DB_MAX_OUTPUT_PORT_TYPE
+b[6] <= a[6].DB_MAX_OUTPUT_PORT_TYPE
+b[7] <= a[7].DB_MAX_OUTPUT_PORT_TYPE
+b[8] <= a[8].DB_MAX_OUTPUT_PORT_TYPE
+b[9] <= a[9].DB_MAX_OUTPUT_PORT_TYPE
+b[10] <= a[10].DB_MAX_OUTPUT_PORT_TYPE
+b[11] <= a[11].DB_MAX_OUTPUT_PORT_TYPE
+b[12] <= a[12].DB_MAX_OUTPUT_PORT_TYPE
+b[13] <= a[13].DB_MAX_OUTPUT_PORT_TYPE
+b[14] <= a[14].DB_MAX_OUTPUT_PORT_TYPE
+b[15] <= a[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+b[0] <= halfAdder:h1.s
+b[1] <= halfAdder:h2.s
+b[2] <= halfAdder:h3.s
+b[3] <= halfAdder:h4.s
+b[4] <= halfAdder:h5.s
+b[5] <= halfAdder:h6.s
+b[6] <= halfAdder:h7.s
+b[7] <= halfAdder:h8.s
+b[8] <= halfAdder:h9.s
+b[9] <= halfAdder:h10.s
+b[10] <= halfAdder:h11.s
+b[11] <= halfAdder:h12.s
+b[12] <= halfAdder:h13.s
+b[13] <= halfAdder:h14.s
+b[14] <= halfAdder:h15.s
+b[15] <= halfAdder:h16.s
+finalcarry[0] <= halfAdder:h16.c
+finalcarry[1] <= halfAdder:h16.c
+finalcarry[2] <= halfAdder:h16.c
+finalcarry[3] <= halfAdder:h16.c
+finalcarry[4] <= halfAdder:h16.c
+finalcarry[5] <= halfAdder:h16.c
+finalcarry[6] <= halfAdder:h16.c
+finalcarry[7] <= halfAdder:h16.c
+finalcarry[8] <= halfAdder:h16.c
+finalcarry[9] <= halfAdder:h16.c
+finalcarry[10] <= halfAdder:h16.c
+finalcarry[11] <= halfAdder:h16.c
+finalcarry[12] <= halfAdder:h16.c
+finalcarry[13] <= halfAdder:h16.c
+finalcarry[14] <= halfAdder:h16.c
+finalcarry[15] <= halfAdder:h16.c
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h3
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h3|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h3|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h4
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h4|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h4|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h5
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h5|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h5|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h6
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h6|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h6|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h7
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h7|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h7|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h8
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h8|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h8|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h9
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h9|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h9|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h10
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h10|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h10|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h11
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h11|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h11|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h12
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h12|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h12|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h13
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h13|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h13|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h14
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h14|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h14|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h15
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h15|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h15|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h16
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h16|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con1|incrementer16Bit:inc0|halfAdder:h16|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con2
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+b[0] <= incrementer16Bit:inc0.b
+b[1] <= incrementer16Bit:inc0.b
+b[2] <= incrementer16Bit:inc0.b
+b[3] <= incrementer16Bit:inc0.b
+b[4] <= incrementer16Bit:inc0.b
+b[5] <= incrementer16Bit:inc0.b
+b[6] <= incrementer16Bit:inc0.b
+b[7] <= incrementer16Bit:inc0.b
+b[8] <= incrementer16Bit:inc0.b
+b[9] <= incrementer16Bit:inc0.b
+b[10] <= incrementer16Bit:inc0.b
+b[11] <= incrementer16Bit:inc0.b
+b[12] <= incrementer16Bit:inc0.b
+b[13] <= incrementer16Bit:inc0.b
+b[14] <= incrementer16Bit:inc0.b
+b[15] <= incrementer16Bit:inc0.b
+
+
+|alu|convertToNegative:con2|sixteenBitNegator:neg0
+a[0] => b[0].DATAIN
+a[1] => b[1].DATAIN
+a[2] => b[2].DATAIN
+a[3] => b[3].DATAIN
+a[4] => b[4].DATAIN
+a[5] => b[5].DATAIN
+a[6] => b[6].DATAIN
+a[7] => b[7].DATAIN
+a[8] => b[8].DATAIN
+a[9] => b[9].DATAIN
+a[10] => b[10].DATAIN
+a[11] => b[11].DATAIN
+a[12] => b[12].DATAIN
+a[13] => b[13].DATAIN
+a[14] => b[14].DATAIN
+a[15] => b[15].DATAIN
+b[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+b[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+b[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+b[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+b[4] <= a[4].DB_MAX_OUTPUT_PORT_TYPE
+b[5] <= a[5].DB_MAX_OUTPUT_PORT_TYPE
+b[6] <= a[6].DB_MAX_OUTPUT_PORT_TYPE
+b[7] <= a[7].DB_MAX_OUTPUT_PORT_TYPE
+b[8] <= a[8].DB_MAX_OUTPUT_PORT_TYPE
+b[9] <= a[9].DB_MAX_OUTPUT_PORT_TYPE
+b[10] <= a[10].DB_MAX_OUTPUT_PORT_TYPE
+b[11] <= a[11].DB_MAX_OUTPUT_PORT_TYPE
+b[12] <= a[12].DB_MAX_OUTPUT_PORT_TYPE
+b[13] <= a[13].DB_MAX_OUTPUT_PORT_TYPE
+b[14] <= a[14].DB_MAX_OUTPUT_PORT_TYPE
+b[15] <= a[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+b[0] <= halfAdder:h1.s
+b[1] <= halfAdder:h2.s
+b[2] <= halfAdder:h3.s
+b[3] <= halfAdder:h4.s
+b[4] <= halfAdder:h5.s
+b[5] <= halfAdder:h6.s
+b[6] <= halfAdder:h7.s
+b[7] <= halfAdder:h8.s
+b[8] <= halfAdder:h9.s
+b[9] <= halfAdder:h10.s
+b[10] <= halfAdder:h11.s
+b[11] <= halfAdder:h12.s
+b[12] <= halfAdder:h13.s
+b[13] <= halfAdder:h14.s
+b[14] <= halfAdder:h15.s
+b[15] <= halfAdder:h16.s
+finalcarry[0] <= halfAdder:h16.c
+finalcarry[1] <= halfAdder:h16.c
+finalcarry[2] <= halfAdder:h16.c
+finalcarry[3] <= halfAdder:h16.c
+finalcarry[4] <= halfAdder:h16.c
+finalcarry[5] <= halfAdder:h16.c
+finalcarry[6] <= halfAdder:h16.c
+finalcarry[7] <= halfAdder:h16.c
+finalcarry[8] <= halfAdder:h16.c
+finalcarry[9] <= halfAdder:h16.c
+finalcarry[10] <= halfAdder:h16.c
+finalcarry[11] <= halfAdder:h16.c
+finalcarry[12] <= halfAdder:h16.c
+finalcarry[13] <= halfAdder:h16.c
+finalcarry[14] <= halfAdder:h16.c
+finalcarry[15] <= halfAdder:h16.c
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h3
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h3|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h3|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h4
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h4|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h4|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h5
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h5|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h5|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h6
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h6|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h6|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h7
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h7|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h7|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h8
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h8|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h8|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h9
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h9|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h9|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h10
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h10|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h10|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h11
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h11|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h11|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h12
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h12|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h12|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h13
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h13|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h13|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h14
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h14|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h14|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h15
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h15|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h15|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h16
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h16|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|convertToNegative:con2|incrementer16Bit:inc0|halfAdder:h16|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|sixteenBitNegator:neg0
+a[0] => b[0].DATAIN
+a[1] => b[1].DATAIN
+a[2] => b[2].DATAIN
+a[3] => b[3].DATAIN
+a[4] => b[4].DATAIN
+a[5] => b[5].DATAIN
+a[6] => b[6].DATAIN
+a[7] => b[7].DATAIN
+a[8] => b[8].DATAIN
+a[9] => b[9].DATAIN
+a[10] => b[10].DATAIN
+a[11] => b[11].DATAIN
+a[12] => b[12].DATAIN
+a[13] => b[13].DATAIN
+a[14] => b[14].DATAIN
+a[15] => b[15].DATAIN
+b[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+b[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+b[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+b[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+b[4] <= a[4].DB_MAX_OUTPUT_PORT_TYPE
+b[5] <= a[5].DB_MAX_OUTPUT_PORT_TYPE
+b[6] <= a[6].DB_MAX_OUTPUT_PORT_TYPE
+b[7] <= a[7].DB_MAX_OUTPUT_PORT_TYPE
+b[8] <= a[8].DB_MAX_OUTPUT_PORT_TYPE
+b[9] <= a[9].DB_MAX_OUTPUT_PORT_TYPE
+b[10] <= a[10].DB_MAX_OUTPUT_PORT_TYPE
+b[11] <= a[11].DB_MAX_OUTPUT_PORT_TYPE
+b[12] <= a[12].DB_MAX_OUTPUT_PORT_TYPE
+b[13] <= a[13].DB_MAX_OUTPUT_PORT_TYPE
+b[14] <= a[14].DB_MAX_OUTPUT_PORT_TYPE
+b[15] <= a[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|sixteenBitNegator:neg1
+a[0] => b[0].DATAIN
+a[1] => b[1].DATAIN
+a[2] => b[2].DATAIN
+a[3] => b[3].DATAIN
+a[4] => b[4].DATAIN
+a[5] => b[5].DATAIN
+a[6] => b[6].DATAIN
+a[7] => b[7].DATAIN
+a[8] => b[8].DATAIN
+a[9] => b[9].DATAIN
+a[10] => b[10].DATAIN
+a[11] => b[11].DATAIN
+a[12] => b[12].DATAIN
+a[13] => b[13].DATAIN
+a[14] => b[14].DATAIN
+a[15] => b[15].DATAIN
+b[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+b[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+b[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+b[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+b[4] <= a[4].DB_MAX_OUTPUT_PORT_TYPE
+b[5] <= a[5].DB_MAX_OUTPUT_PORT_TYPE
+b[6] <= a[6].DB_MAX_OUTPUT_PORT_TYPE
+b[7] <= a[7].DB_MAX_OUTPUT_PORT_TYPE
+b[8] <= a[8].DB_MAX_OUTPUT_PORT_TYPE
+b[9] <= a[9].DB_MAX_OUTPUT_PORT_TYPE
+b[10] <= a[10].DB_MAX_OUTPUT_PORT_TYPE
+b[11] <= a[11].DB_MAX_OUTPUT_PORT_TYPE
+b[12] <= a[12].DB_MAX_OUTPUT_PORT_TYPE
+b[13] <= a[13].DB_MAX_OUTPUT_PORT_TYPE
+b[14] <= a[14].DB_MAX_OUTPUT_PORT_TYPE
+b[15] <= a[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|incrementer16Bit:inc0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+b[0] <= halfAdder:h1.s
+b[1] <= halfAdder:h2.s
+b[2] <= halfAdder:h3.s
+b[3] <= halfAdder:h4.s
+b[4] <= halfAdder:h5.s
+b[5] <= halfAdder:h6.s
+b[6] <= halfAdder:h7.s
+b[7] <= halfAdder:h8.s
+b[8] <= halfAdder:h9.s
+b[9] <= halfAdder:h10.s
+b[10] <= halfAdder:h11.s
+b[11] <= halfAdder:h12.s
+b[12] <= halfAdder:h13.s
+b[13] <= halfAdder:h14.s
+b[14] <= halfAdder:h15.s
+b[15] <= halfAdder:h16.s
+finalcarry[0] <= halfAdder:h16.c
+finalcarry[1] <= halfAdder:h16.c
+finalcarry[2] <= halfAdder:h16.c
+finalcarry[3] <= halfAdder:h16.c
+finalcarry[4] <= halfAdder:h16.c
+finalcarry[5] <= halfAdder:h16.c
+finalcarry[6] <= halfAdder:h16.c
+finalcarry[7] <= halfAdder:h16.c
+finalcarry[8] <= halfAdder:h16.c
+finalcarry[9] <= halfAdder:h16.c
+finalcarry[10] <= halfAdder:h16.c
+finalcarry[11] <= halfAdder:h16.c
+finalcarry[12] <= halfAdder:h16.c
+finalcarry[13] <= halfAdder:h16.c
+finalcarry[14] <= halfAdder:h16.c
+finalcarry[15] <= halfAdder:h16.c
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h3
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h3|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h3|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h4
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h4|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h4|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h5
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h5|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h5|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h6
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h6|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h6|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h7
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h7|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h7|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h8
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h8|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h8|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h9
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h9|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h9|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h10
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h10|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h10|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h11
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h11|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h11|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h12
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h12|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h12|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h13
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h13|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h13|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h14
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h14|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h14|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h15
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h15|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h15|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h16
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h16|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc0|halfAdder:h16|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+b[0] <= halfAdder:h1.s
+b[1] <= halfAdder:h2.s
+b[2] <= halfAdder:h3.s
+b[3] <= halfAdder:h4.s
+b[4] <= halfAdder:h5.s
+b[5] <= halfAdder:h6.s
+b[6] <= halfAdder:h7.s
+b[7] <= halfAdder:h8.s
+b[8] <= halfAdder:h9.s
+b[9] <= halfAdder:h10.s
+b[10] <= halfAdder:h11.s
+b[11] <= halfAdder:h12.s
+b[12] <= halfAdder:h13.s
+b[13] <= halfAdder:h14.s
+b[14] <= halfAdder:h15.s
+b[15] <= halfAdder:h16.s
+finalcarry[0] <= halfAdder:h16.c
+finalcarry[1] <= halfAdder:h16.c
+finalcarry[2] <= halfAdder:h16.c
+finalcarry[3] <= halfAdder:h16.c
+finalcarry[4] <= halfAdder:h16.c
+finalcarry[5] <= halfAdder:h16.c
+finalcarry[6] <= halfAdder:h16.c
+finalcarry[7] <= halfAdder:h16.c
+finalcarry[8] <= halfAdder:h16.c
+finalcarry[9] <= halfAdder:h16.c
+finalcarry[10] <= halfAdder:h16.c
+finalcarry[11] <= halfAdder:h16.c
+finalcarry[12] <= halfAdder:h16.c
+finalcarry[13] <= halfAdder:h16.c
+finalcarry[14] <= halfAdder:h16.c
+finalcarry[15] <= halfAdder:h16.c
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h3
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h3|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h3|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h4
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h4|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h4|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h5
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h5|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h5|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h6
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h6|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h6|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h7
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h7|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h7|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h8
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h8|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h8|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h9
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h9|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h9|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h10
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h10|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h10|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h11
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h11|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h11|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h12
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h12|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h12|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h13
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h13|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h13|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h14
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h14|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h14|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h15
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h15|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h15|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h16
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h16|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|incrementer16Bit:inc1|halfAdder:h16|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+b[0] <= fullAdder:fa0.s
+b[1] <= fullAdder:fa1.s
+b[2] <= fullAdder:fa2.s
+b[3] <= fullAdder:fa3.s
+b[4] <= fullAdder:fa4.s
+b[5] <= fullAdder:fa5.s
+b[6] <= fullAdder:fa6.s
+b[7] <= fullAdder:fa7.s
+b[8] <= fullAdder:fa8.s
+b[9] <= fullAdder:fa9.s
+b[10] <= fullAdder:fa10.s
+b[11] <= fullAdder:fa11.s
+b[12] <= fullAdder:fa12.s
+b[13] <= fullAdder:fa13.s
+b[14] <= fullAdder:fa14.s
+b[15] <= fullAdder:fa15.s
+b[16] <= notGate:not_1.port0
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa0
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa0|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa0|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa0|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa0|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa0|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa0|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa0|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa1
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa1|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa1|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa1|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa1|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa1|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa1|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa1|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa2
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa2|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa2|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa2|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa2|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa2|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa2|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa2|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa3
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa3|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa3|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa3|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa3|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa3|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa3|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa3|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa4
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa4|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa4|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa4|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa4|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa4|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa4|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa4|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa5
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa5|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa5|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa5|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa5|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa5|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa5|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa5|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa6
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa6|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa6|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa6|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa6|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa6|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa6|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa6|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa7
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa7|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa7|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa7|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa7|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa7|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa7|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa7|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa8
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa8|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa8|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa8|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa8|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa8|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa8|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa8|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa9
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa9|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa9|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa9|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa9|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa9|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa9|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa9|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa10
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa10|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa10|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa10|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa10|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa10|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa10|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa10|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa11
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa11|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa11|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa11|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa11|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa11|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa11|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa11|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa12
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa12|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa12|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa12|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa12|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa12|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa12|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa12|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa13
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa13|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa13|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa13|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa13|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa13|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa13|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa13|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa14
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa14|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa14|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa14|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa14|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa14|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa14|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa14|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa15
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa15|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa15|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa15|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa15|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa15|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa15|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec0|fullAdder:fa15|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec0|notGate:not_1
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|decrementer16Bit:dec1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+b[0] <= fullAdder:fa0.s
+b[1] <= fullAdder:fa1.s
+b[2] <= fullAdder:fa2.s
+b[3] <= fullAdder:fa3.s
+b[4] <= fullAdder:fa4.s
+b[5] <= fullAdder:fa5.s
+b[6] <= fullAdder:fa6.s
+b[7] <= fullAdder:fa7.s
+b[8] <= fullAdder:fa8.s
+b[9] <= fullAdder:fa9.s
+b[10] <= fullAdder:fa10.s
+b[11] <= fullAdder:fa11.s
+b[12] <= fullAdder:fa12.s
+b[13] <= fullAdder:fa13.s
+b[14] <= fullAdder:fa14.s
+b[15] <= fullAdder:fa15.s
+b[16] <= notGate:not_1.port0
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa0
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa0|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa0|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa0|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa0|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa0|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa0|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa0|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa1
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa1|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa1|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa1|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa1|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa1|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa1|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa1|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa2
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa2|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa2|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa2|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa2|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa2|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa2|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa2|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa3
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa3|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa3|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa3|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa3|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa3|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa3|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa3|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa4
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa4|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa4|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa4|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa4|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa4|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa4|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa4|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa5
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa5|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa5|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa5|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa5|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa5|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa5|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa5|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa6
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa6|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa6|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa6|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa6|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa6|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa6|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa6|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa7
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa7|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa7|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa7|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa7|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa7|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa7|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa7|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa8
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa8|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa8|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa8|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa8|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa8|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa8|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa8|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa9
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa9|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa9|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa9|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa9|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa9|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa9|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa9|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa10
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa10|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa10|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa10|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa10|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa10|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa10|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa10|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa11
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa11|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa11|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa11|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa11|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa11|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa11|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa11|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa12
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa12|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa12|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa12|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa12|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa12|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa12|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa12|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa13
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa13|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa13|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa13|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa13|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa13|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa13|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa13|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa14
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa14|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa14|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa14|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa14|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa14|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa14|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa14|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa15
+s <= halfAdder:HA2.port0
+c <= orGate:or1.y
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa15|halfAdder:HA1
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa15|halfAdder:HA1|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa15|halfAdder:HA1|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa15|halfAdder:HA2
+s <= xorGate:xor_0.port0
+c <= andGate:and_0.port0
+a => a.IN2
+b => b.IN2
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa15|halfAdder:HA2|xorGate:xor_0
+y <= nand_4.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+a => nand_2.IN1
+b => nand_1.IN1
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa15|halfAdder:HA2|andGate:and_0
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|decrementer16Bit:dec1|fullAdder:fa15|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|decrementer16Bit:dec1|notGate:not_1
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => y.DATAIN
+
+
+|alu|sixteenBitAnd:and16
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+y[0] <= andGate:and1.y
+y[1] <= andGate:and2.y
+y[2] <= andGate:and3.y
+y[3] <= andGate:and4.y
+y[4] <= andGate:and5.y
+y[5] <= andGate:and6.y
+y[6] <= andGate:and7.y
+y[7] <= andGate:and8.y
+y[8] <= andGate:and9.y
+y[9] <= andGate:and10.y
+y[10] <= andGate:and11.y
+y[11] <= andGate:and12.y
+y[12] <= andGate:and13.y
+y[13] <= andGate:and14.y
+y[14] <= andGate:and15.y
+y[15] <= andGate:and16.y
+
+
+|alu|sixteenBitAnd:and16|andGate:and1
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|sixteenBitAnd:and16|andGate:and2
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|sixteenBitAnd:and16|andGate:and3
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|sixteenBitAnd:and16|andGate:and4
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|sixteenBitAnd:and16|andGate:and5
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|sixteenBitAnd:and16|andGate:and6
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|sixteenBitAnd:and16|andGate:and7
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|sixteenBitAnd:and16|andGate:and8
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|sixteenBitAnd:and16|andGate:and9
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|sixteenBitAnd:and16|andGate:and10
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|sixteenBitAnd:and16|andGate:and11
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|sixteenBitAnd:and16|andGate:and12
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|sixteenBitAnd:and16|andGate:and13
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|sixteenBitAnd:and16|andGate:and14
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|sixteenBitAnd:and16|andGate:and15
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|sixteenBitAnd:and16|andGate:and16
+y <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_1.IN0
+b => nand_1.IN1
+
+
+|alu|sixteenBitOr:or16
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+y[0] <= orGate:or1.y
+y[1] <= orGate:or2.y
+y[2] <= orGate:or3.y
+y[3] <= orGate:or4.y
+y[4] <= orGate:or5.y
+y[5] <= orGate:or6.y
+y[6] <= orGate:or7.y
+y[7] <= orGate:or8.y
+y[8] <= orGate:or9.y
+y[9] <= orGate:or10.y
+y[10] <= orGate:or11.y
+y[11] <= orGate:or12.y
+y[12] <= orGate:or13.y
+y[13] <= orGate:or14.y
+y[14] <= orGate:or15.y
+y[15] <= orGate:or16.y
+
+
+|alu|sixteenBitOr:or16|orGate:or1
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|sixteenBitOr:or16|orGate:or2
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|sixteenBitOr:or16|orGate:or3
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|sixteenBitOr:or16|orGate:or4
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|sixteenBitOr:or16|orGate:or5
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|sixteenBitOr:or16|orGate:or6
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|sixteenBitOr:or16|orGate:or7
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|sixteenBitOr:or16|orGate:or8
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|sixteenBitOr:or16|orGate:or9
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|sixteenBitOr:or16|orGate:or10
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|sixteenBitOr:or16|orGate:or11
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|sixteenBitOr:or16|orGate:or12
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|sixteenBitOr:or16|orGate:or13
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|sixteenBitOr:or16|orGate:or14
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|sixteenBitOr:or16|orGate:or15
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
+|alu|sixteenBitOr:or16|orGate:or16
+y <= nand_3.DB_MAX_OUTPUT_PORT_TYPE
+a => nand_3.IN0
+b => nand_3.IN1
+
+
