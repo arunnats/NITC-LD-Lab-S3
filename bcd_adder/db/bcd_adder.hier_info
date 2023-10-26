@@ -7,11 +7,11 @@ b[0] => b[0].IN1
 b[1] => b[1].IN1
 b[2] => b[2].IN1
 b[3] => b[3].IN1
-sum[0] <= four_bit_adder:add1.sum
-sum[1] <= four_bit_adder:add1.sum
-sum[2] <= four_bit_adder:add1.sum
-sum[3] <= four_bit_adder:add1.sum
-finalcarry <= four_bit_adder:add1.finalcarry
+sum[0] << four_bit_adder:add1.sum
+sum[1] << four_bit_adder:add1.sum
+sum[2] << four_bit_adder:add1.sum
+sum[3] << four_bit_adder:add1.sum
+finalcarry << four_bit_adder:add1.finalcarry
 
 
 |bcd_adder|four_bit_adder:add0

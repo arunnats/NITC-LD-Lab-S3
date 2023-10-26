@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Analysis & Synthesis Status : Failed - Mon Sep 25 00:39:39 2023
+=======
+Analysis & Synthesis Status : Successful - Mon Oct  9 22:44:49 2023
+>>>>>>> a587b8a649afc5469da72daa0545d64ff1653cf8
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : bcd_adder
 Top-level Entity Name : bcd_adder
