@@ -1,0 +1,8 @@
+|project1
+a => nanf_g_1.IN0
+b => nanf_g_1.IN1
+c => nanf_g_2.IN0
+d => nanf_g_2.IN1
+o << nanf_g_3.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,15 @@
+|bcd_e3
+a[0] => or0.IN0
+a[0] => e3[0].DATAIN
+a[1] => or0.IN1
+a[1] => and1.IN1
+a[2] => and2.IN1
+a[2] => or2.IN1
+a[3] => and3.IN1
+a[3] => or3.IN1
+e3[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+e3[1] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+e3[2] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+e3[3] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
