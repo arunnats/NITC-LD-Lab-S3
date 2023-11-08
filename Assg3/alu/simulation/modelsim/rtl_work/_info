@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu/simulation/modelsim
 vadder16bit
-Z1 !s110 1698351401
+Z1 !s110 1698397747
 !i10b 1
 !s100 UUKFUR;O98UfW=Y?H82BV1
 IST:mj3lYTXdAQhT]<WanQ0
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1698351401.000000
+Z7 !s108 1698397747.000000
 Z8 !s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu/alu.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu/alu.v|
 !i113 1
@@ -55,11 +55,11 @@ R12
 valuTestbench
 R1
 !i10b 1
-!s100 eO;78OcY>4WQBff:>O3?Z3
-Ia=I2hbFf2=[3QlgSQX>`]2
+!s100 gBNOQeAD7nX?gcf5QIKVX0
+IZ2iR;Rm:T=Pl5;5WZQ`172
 R2
 R0
-w1698351336
+w1698375704
 8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu/aluTestbench.v
 FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg3/alu/aluTestbench.v
 L0 1

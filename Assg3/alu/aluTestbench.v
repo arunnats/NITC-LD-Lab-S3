@@ -42,8 +42,8 @@ module aluTestbench;
     
     integer r,s;
     initial begin
-   	 for (r = 0; r < 256; r = r + 1) begin
-			for (s = 0; s < 256; s = s + 1) begin
+   	 for (r = 0; r < 65536; r = r + 1) begin
+			for (s = 0; s < 65536; s = s + 1) begin
    		 x=r;
 			 y=s;
      		 #10;

@@ -1,0 +1,71 @@
+|srlatch
+s => comb.IN0
+r => comb.IN0
+qfinal <= mux:m1.port2
+qbarfinal <= mux:m2.port2
+
+
+|srlatch|and_gate:a3
+ab <= abbar.DB_MAX_OUTPUT_PORT_TYPE
+a => abbar.IN0
+b => abbar.IN1
+
+
+|srlatch|mux:m1
+a => a.IN1
+b => b.IN2
+o <= or_gate:o2.port0
+
+
+|srlatch|mux:m1|not_gate:n1
+abar <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => abar.DATAIN
+
+
+|srlatch|mux:m1|and_gate:a1
+ab <= abbar.DB_MAX_OUTPUT_PORT_TYPE
+a => abbar.IN0
+b => abbar.IN1
+
+
+|srlatch|mux:m1|and_gate:a2
+ab <= abbar.DB_MAX_OUTPUT_PORT_TYPE
+a => abbar.IN0
+b => abbar.IN1
+
+
+|srlatch|mux:m1|or_gate:o2
+ab <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a => comb.IN0
+b => comb.IN1
+
+
+|srlatch|mux:m2
+a => a.IN1
+b => b.IN2
+o <= or_gate:o2.port0
+
+
+|srlatch|mux:m2|not_gate:n1
+abar <= a.DB_MAX_OUTPUT_PORT_TYPE
+a => abar.DATAIN
+
+
+|srlatch|mux:m2|and_gate:a1
+ab <= abbar.DB_MAX_OUTPUT_PORT_TYPE
+a => abbar.IN0
+b => abbar.IN1
+
+
+|srlatch|mux:m2|and_gate:a2
+ab <= abbar.DB_MAX_OUTPUT_PORT_TYPE
+a => abbar.IN0
+b => abbar.IN1
+
+
+|srlatch|mux:m2|or_gate:o2
+ab <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a => comb.IN0
+b => comb.IN1
+
+

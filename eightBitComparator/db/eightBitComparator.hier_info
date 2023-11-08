@@ -1,0 +1,70 @@
+|eightBitComparator
+a[0] => a[0].IN3
+a[1] => a[1].IN3
+a[2] => a[2].IN3
+a[3] => a[3].IN3
+a[4] => a[4].IN3
+b[0] => b[0].IN3
+b[1] => b[1].IN3
+b[2] => b[2].IN3
+b[3] => b[3].IN3
+b[4] => b[4].IN3
+aGreater <= greater:aGreaterb.y
+bGreater <= greater:bGreatera.y
+aEqualsb <= equals:eq0.y
+
+
+|eightBitComparator|equals:eq0
+a[0] => xor0.IN0
+a[1] => xor1.IN0
+a[2] => xor2.IN0
+a[3] => xor3.IN0
+a[4] => ~NO_FANOUT~
+b[0] => xor0.IN1
+b[1] => xor1.IN1
+b[2] => xor2.IN1
+b[3] => xor3.IN1
+b[4] => ~NO_FANOUT~
+y <= and0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitComparator|greater:aGreaterb
+a[0] => and3.IN3
+a[1] => xor1.IN0
+a[1] => and2.IN2
+a[2] => xor2.IN0
+a[2] => and1.IN1
+a[3] => xor3.IN0
+a[3] => and0.IN0
+a[4] => ~NO_FANOUT~
+b[0] => and3.IN4
+b[1] => xor1.IN1
+b[1] => and2.IN3
+b[2] => xor2.IN1
+b[2] => and1.IN2
+b[3] => xor3.IN1
+b[3] => and0.IN1
+b[4] => ~NO_FANOUT~
+y <= or0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitComparator|greater:bGreatera
+a[0] => and3.IN3
+a[1] => xor1.IN0
+a[1] => and2.IN2
+a[2] => xor2.IN0
+a[2] => and1.IN1
+a[3] => xor3.IN0
+a[3] => and0.IN0
+a[4] => ~NO_FANOUT~
+b[0] => and3.IN4
+b[1] => xor1.IN1
+b[1] => and2.IN3
+b[2] => xor2.IN1
+b[2] => and1.IN2
+b[3] => xor3.IN1
+b[3] => and0.IN1
+b[4] => ~NO_FANOUT~
+y <= or0.DB_MAX_OUTPUT_PORT_TYPE
+
+

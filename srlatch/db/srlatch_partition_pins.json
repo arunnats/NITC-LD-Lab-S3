@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "qfinal",
+					"strict" : false
+				},
+				{
+					"name" : "qbarfinal",
+					"strict" : false
+				},
+				{
+					"name" : "s",
+					"strict" : false
+				},
+				{
+					"name" : "r",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

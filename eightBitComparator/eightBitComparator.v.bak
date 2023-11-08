@@ -1,0 +1,49 @@
+module eightBitComparator(
+	input [4:0] a,
+	input [4:0] b,
+	output aGreater,
+	bGreater,
+	aEqualsb
+);
+
+	
+
+endmodule
+
+module equals(
+	input [4:0] a,
+	input [4:0] b,
+	output y
+);
+
+	wire xorWire0, xorWire1, xorWire2, xorWire3;
+	
+	xor xor0(xorWire0,a[0],b[0]);
+	xor xor1(xorWire1,a[1],b[1]);
+	xor xor2(xorWire2,a[2],b[2]);
+	xor xor3(xorWire3,a[3],b[3]);
+	
+	and and0(y,xorWire0,xorWire1,xorWire2,xorWire3);
+	
+endmodule
+
+module greater(
+	input [4:0] a,
+	input [4:0] b,
+	output y
+);
+
+	wire xorWire0, xorWire1, xorWire2, xorWire3;
+	wire [4:0] aNot, bNot;
+	
+	not not0(aNot,a);
+	not not1(bNot,b);
+	
+	xor xor0(xorWire0,a[0],b[0]);
+	xor xor1(xorWire1,a[1],b[1]);
+	xor xor2(xorWire2,a[2],b[2]);
+	xor xor3(xorWire3,a[3],b[3]);
+	
+	and and0(y,xorWire0,xorWire1,xorWire2,xorWire3);
+	
+endmodule

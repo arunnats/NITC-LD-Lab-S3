@@ -347,7 +347,3 @@ module xorGate(
     nand nand_4 (y,aNandComp,bNandComp);
 
 endmodule
-
-
-
-

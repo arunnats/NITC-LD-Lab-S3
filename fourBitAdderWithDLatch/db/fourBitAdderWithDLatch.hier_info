@@ -1,0 +1,9 @@
+|fourBitAdderWithDLatch
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qBar <= nand1.DB_MAX_OUTPUT_PORT_TYPE
+d => and0.IN0
+d => and1.IN0
+clk => and0.IN1
+clk => and1.IN1
+
+
