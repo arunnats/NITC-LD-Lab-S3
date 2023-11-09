@@ -1,0 +1,253 @@
+|multiplier
+a[0] => a[0].IN4
+a[1] => a[1].IN4
+a[2] => a[2].IN4
+a[3] => a[3].IN4
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+c[0] << fourBitAdder:fa2.sum
+c[1] << fourBitAdder:fa2.sum
+c[2] << fourBitAdder:fa2.sum
+c[3] << fourBitAdder:fa2.sum
+c[4] << fourBitAdder:fa2.cout
+c[5] << <GND>
+c[6] << <GND>
+c[7] << <GND>
+
+
+|multiplier|multiply:m0
+a[0] => y.IN0
+a[1] => y.IN0
+a[2] => y.IN0
+a[3] => y.IN0
+b => y.IN1
+b => y.IN1
+b => y.IN1
+b => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|multiply:m1
+a[0] => y.IN0
+a[1] => y.IN0
+a[2] => y.IN0
+a[3] => y.IN0
+b => y.IN1
+b => y.IN1
+b => y.IN1
+b => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|multiply:m2
+a[0] => y.IN0
+a[1] => y.IN0
+a[2] => y.IN0
+a[3] => y.IN0
+b => y.IN1
+b => y.IN1
+b => y.IN1
+b => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|multiply:m3
+a[0] => y.IN0
+a[1] => y.IN0
+a[2] => y.IN0
+a[3] => y.IN0
+b => y.IN1
+b => y.IN1
+b => y.IN1
+b => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|fourBitAdder:fa0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+sum[0] <= halfAdder:ha0.port2
+sum[1] <= fullAdder:fa0.port3
+sum[2] <= fullAdder:fa1.port3
+sum[3] <= fullAdder:fa2.port3
+cout <= fullAdder:fa2.port4
+
+
+|multiplier|fourBitAdder:fa0|halfAdder:ha0
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|fourBitAdder:fa0|fullAdder:fa0
+a => aXorb.IN0
+a => bAndb.IN0
+b => aXorb.IN1
+b => bAndb.IN1
+cin => s.IN1
+cin => cinAndaXorb.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|fourBitAdder:fa0|fullAdder:fa1
+a => aXorb.IN0
+a => bAndb.IN0
+b => aXorb.IN1
+b => bAndb.IN1
+cin => s.IN1
+cin => cinAndaXorb.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|fourBitAdder:fa0|fullAdder:fa2
+a => aXorb.IN0
+a => bAndb.IN0
+b => aXorb.IN1
+b => bAndb.IN1
+cin => s.IN1
+cin => cinAndaXorb.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|fourBitAdder:fa1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+sum[0] <= halfAdder:ha0.port2
+sum[1] <= fullAdder:fa0.port3
+sum[2] <= fullAdder:fa1.port3
+sum[3] <= fullAdder:fa2.port3
+cout <= fullAdder:fa2.port4
+
+
+|multiplier|fourBitAdder:fa1|halfAdder:ha0
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|fourBitAdder:fa1|fullAdder:fa0
+a => aXorb.IN0
+a => bAndb.IN0
+b => aXorb.IN1
+b => bAndb.IN1
+cin => s.IN1
+cin => cinAndaXorb.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|fourBitAdder:fa1|fullAdder:fa1
+a => aXorb.IN0
+a => bAndb.IN0
+b => aXorb.IN1
+b => bAndb.IN1
+cin => s.IN1
+cin => cinAndaXorb.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|fourBitAdder:fa1|fullAdder:fa2
+a => aXorb.IN0
+a => bAndb.IN0
+b => aXorb.IN1
+b => bAndb.IN1
+cin => s.IN1
+cin => cinAndaXorb.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|fourBitAdder:fa2
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+sum[0] <= halfAdder:ha0.port2
+sum[1] <= fullAdder:fa0.port3
+sum[2] <= fullAdder:fa1.port3
+sum[3] <= fullAdder:fa2.port3
+cout <= fullAdder:fa2.port4
+
+
+|multiplier|fourBitAdder:fa2|halfAdder:ha0
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|fourBitAdder:fa2|fullAdder:fa0
+a => aXorb.IN0
+a => bAndb.IN0
+b => aXorb.IN1
+b => bAndb.IN1
+cin => s.IN1
+cin => cinAndaXorb.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|fourBitAdder:fa2|fullAdder:fa1
+a => aXorb.IN0
+a => bAndb.IN0
+b => aXorb.IN1
+b => bAndb.IN1
+cin => s.IN1
+cin => cinAndaXorb.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|fourBitAdder:fa2|fullAdder:fa2
+a => aXorb.IN0
+a => bAndb.IN0
+b => aXorb.IN1
+b => bAndb.IN1
+cin => s.IN1
+cin => cinAndaXorb.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

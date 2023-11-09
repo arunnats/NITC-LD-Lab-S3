@@ -1,0 +1,146 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/simulation/modelsim
+vfourBitAdder
+Z1 !s110 1699466604
+!i10b 1
+!s100 >RU_B;TS9@P105hj`S2m82
+I7CXhEYOmIBTKWJ>E<Jhkc2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1699466196
+Z4 8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v
+Z5 FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v
+L0 29
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1699466604.000000
+Z8 !s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier
+Z12 tCvgOpt 0
+nfour@bit@adder
+vfullAdder
+R1
+!i10b 1
+!s100 5lzmRYjjNB9`OzS7`EW8l3
+IBdJ3^kWN2ZJc8zB3mU8Jc3
+R2
+R0
+R3
+R4
+R5
+L0 60
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nfull@adder
+vhalfAdder
+R1
+!i10b 1
+!s100 Ogl3K?ES9L1d2g8l7;TUA1
+IW7c_@caaP3=BcnbA?`Dg12
+R2
+R0
+R3
+R4
+R5
+L0 48
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+nhalf@adder
+vmultiplier
+R1
+!i10b 1
+!s100 XIYn]4DifRm[T?8d_LY7F3
+I4?49h]^>zQYCTPZQzI<Mf2
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vmultiplierTestbench
+R1
+!i10b 1
+!s100 5M6T]W]:VNjYl[fEb2[9`2
+IAAnB1Kn9mF]?d:WE=bFUK1
+R2
+R0
+w1699466554
+8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplierTestbench.v
+FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplierTestbench.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplierTestbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplierTestbench.v|
+!i113 1
+R10
+R11
+R12
+nmultiplier@testbench
+vmultiply
+R1
+!i10b 1
+!s100 ]_W1GWLK8]Lg]kV;^OQk`2
+IFW;UkQg^j>ONhjYFRVDEZ3
+R2
+R0
+R3
+R4
+R5
+L0 81
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12

@@ -1,0 +1,25 @@
+module dFlipFlopTestbench();
+reg d;
+reg clk;
+reg reset;
+wire q;
+
+d_FlipFlop testbench(d,clk,reset,q);
+
+initial begin
+  clk=0;
+end
+initial begin
+     forever #10 clk = ~clk;  
+ reset=1;
+ d <= 0;
+ #100;
+ d <= 1;
+ #100;
+ d <= 0;
+ #100;
+ d <= 1;
+ reset=0;
+ d <=1;
+end
+endmodule

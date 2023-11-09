@@ -1,0 +1,11 @@
+module d_Latch (
+   input d,
+   input reset,
+   output reg q
+);
+   always @ (reset or d)
+      if (!reset)
+         q <= 0;
+      else
+         q <= d;
+endmodule

@@ -1,0 +1,47 @@
+module eightBitRegisterTestbench();
+reg [7:0] d;
+reg clk;
+reg reset;
+wire [7:0] q;
+
+eightBitRegister testbench(d,clk,reset,q);
+
+	initial begin
+        clk = 0;
+        forever #10 clk = ~clk;  
+    end
+
+    initial begin
+      reset = 1;
+		d = 0;
+		#20;
+		d = 65;
+		#20;
+		d = 32;
+		#20;
+		d = 241;
+		#20;
+		d = 73;
+		#20;
+		d = 16;
+		#20;
+		d = 25;
+		#20;
+		d = 69;
+		#20;
+		reset=0;
+		#20;
+		d = 64;
+		#20;
+		d = 123;
+		#20;
+		reset=1;
+		#20;
+		d = 93;
+		#20;
+		d = 256;
+		#20;
+		d = 198;
+		#20 $finish;
+	end
+endmodule

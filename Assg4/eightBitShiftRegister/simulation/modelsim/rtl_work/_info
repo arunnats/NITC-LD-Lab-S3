@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/simulation/modelsim
+veightBitShiftRegister
+Z1 !s110 1699457914
+!i10b 1
+!s100 :BQQezXnonzQ_AmzXT_0n1
+I2BXlia`Xm`4K3m?fEW2_D2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1699457778
+8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegister.v
+FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegister.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1699457914.000000
+!s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegister.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegister.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister
+Z7 tCvgOpt 0
+neight@bit@shift@register
+veightBitShiftRegisterTestBench
+R1
+!i10b 1
+!s100 MKi<9kgC7H?e34@OLi95P0
+IU=S5CCU_VAZ`;Z4]G3j`h3
+R2
+R0
+w1699457869
+8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegisterTestBench.v
+FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegisterTestBench.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegisterTestBench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegisterTestBench.v|
+!i113 1
+R5
+R6
+R7
+neight@bit@shift@register@test@bench

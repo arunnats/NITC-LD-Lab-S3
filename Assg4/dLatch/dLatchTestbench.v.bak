@@ -1,0 +1,21 @@
+`timescale 1ns/1ps;
+module dLatchTestbench();
+reg d;
+reg reset;
+wire q;
+
+dLatch testbench(.d(d),.reset(reset),.q(q));
+ 
+initial begin  
+ reset=1;
+ d <= 0;
+ #100;
+ d <= 1;
+ #100;
+ d <= 0;
+ #100;
+ d <= 1;
+ reset=0;
+ d <=1;
+end
+endmodule
