@@ -1,5 +1,5 @@
 Flow report for eightBitShiftRegister
-Wed Nov  8 21:08:00 2023
+Fri Nov 10 17:22:56 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov  8 21:08:00 2023          ;
+; Flow Status                        ; Successful - Fri Nov 10 17:22:56 2023          ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; eightBitShiftRegister                          ;
 ; Top-level Entity Name              ; eightBitShiftRegister                          ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+-----------------------+
 ; Option            ; Setting               ;
 +-------------------+-----------------------+
-; Start date & time ; 11/08/2023 21:07:50   ;
+; Start date & time ; 11/10/2023 17:22:47   ;
 ; Main task         ; Compilation           ;
 ; Revision Name     ; eightBitShiftRegister ;
 +-------------------+-----------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 1096159225709.169945787023416          ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 1096159225709.169961716722576          ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; eightBitShiftRegisterTestBench    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -108,8 +108,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4835 MB             ; 00:00:13                           ;
-; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:13                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4831 MB             ; 00:00:12                           ;
+; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:12                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

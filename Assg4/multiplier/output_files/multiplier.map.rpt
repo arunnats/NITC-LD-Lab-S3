@@ -1,5 +1,5 @@
 Analysis & Synthesis report for multiplier
-Wed Nov  8 23:31:17 2023
+Sat Nov 11 14:22:49 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -13,15 +13,12 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Port Connectivity Checks: "fourBitAdder:fa2"
- 10. Port Connectivity Checks: "fourBitAdder:fa1"
- 11. Port Connectivity Checks: "fourBitAdder:fa0"
- 12. Port Connectivity Checks: "multiply:m3"
- 13. Port Connectivity Checks: "multiply:m2"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+  8. Logic Cells Representing Combinational Loops
+  9. General Register Statistics
+ 10. Port Connectivity Checks: "fullAdder:fa1"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -48,13 +45,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov  8 23:31:17 2023          ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 11 14:22:49 2023          ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; multiplier                                     ;
 ; Top-level Entity Name              ; multiplier                                     ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 15                                             ;
-;     Total combinational functions  ; 15                                             ;
+; Total logic elements               ; 29                                             ;
+;     Total combinational functions  ; 29                                             ;
 ;     Dedicated logic registers      ; 0                                              ;
 ; Total registers                    ; 0                                              ;
 ; Total pins                         ; 16                                             ;
@@ -178,59 +175,72 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-; Estimated Total logic elements              ; 15         ;
-;                                             ;            ;
-; Total combinational functions               ; 15         ;
-; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 8          ;
-;     -- 3 input functions                    ; 3          ;
-;     -- <=2 input functions                  ; 4          ;
-;                                             ;            ;
-; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 15         ;
-;     -- arithmetic mode                      ; 0          ;
-;                                             ;            ;
-; Total registers                             ; 0          ;
-;     -- Dedicated logic registers            ; 0          ;
-;     -- I/O registers                        ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 16         ;
-;                                             ;            ;
-; Embedded Multiplier 9-bit elements          ; 0          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; a[0]~input ;
-; Maximum fan-out                             ; 6          ;
-; Total fan-out                               ; 70         ;
-; Average fan-out                             ; 1.49       ;
-+---------------------------------------------+------------+
++--------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                        ;
++---------------------------------------------+----------------------+
+; Resource                                    ; Usage                ;
++---------------------------------------------+----------------------+
+; Estimated Total logic elements              ; 29                   ;
+;                                             ;                      ;
+; Total combinational functions               ; 29                   ;
+; Logic element usage by number of LUT inputs ;                      ;
+;     -- 4 input functions                    ; 17                   ;
+;     -- 3 input functions                    ; 2                    ;
+;     -- <=2 input functions                  ; 10                   ;
+;                                             ;                      ;
+; Logic elements by mode                      ;                      ;
+;     -- normal mode                          ; 29                   ;
+;     -- arithmetic mode                      ; 0                    ;
+;                                             ;                      ;
+; Total registers                             ; 0                    ;
+;     -- Dedicated logic registers            ; 0                    ;
+;     -- I/O registers                        ; 0                    ;
+;                                             ;                      ;
+; I/O pins                                    ; 16                   ;
+;                                             ;                      ;
+; Embedded Multiplier 9-bit elements          ; 0                    ;
+;                                             ;                      ;
+; Maximum fan-out node                        ; fullAdder:fa2|cout~1 ;
+; Maximum fan-out                             ; 6                    ;
+; Total fan-out                               ; 118                  ;
+; Average fan-out                             ; 1.93                 ;
++---------------------------------------------+----------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                        ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+--------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                        ; Entity Name  ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+--------------+--------------+
-; |multiplier                ; 15 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 16   ; 0            ; 0          ; |multiplier                                ; multiplier   ; work         ;
-;    |fourBitAdder:fa0|      ; 3 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fourBitAdder:fa0               ; fourBitAdder ; work         ;
-;       |fullAdder:fa0|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fourBitAdder:fa0|fullAdder:fa0 ; fullAdder    ; work         ;
-;       |fullAdder:fa1|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fourBitAdder:fa0|fullAdder:fa1 ; fullAdder    ; work         ;
-;       |halfAdder:ha0|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fourBitAdder:fa0|halfAdder:ha0 ; halfAdder    ; work         ;
-;    |fourBitAdder:fa1|      ; 5 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fourBitAdder:fa1               ; fourBitAdder ; work         ;
-;       |fullAdder:fa0|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fourBitAdder:fa1|fullAdder:fa0 ; fullAdder    ; work         ;
-;       |fullAdder:fa1|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fourBitAdder:fa1|fullAdder:fa1 ; fullAdder    ; work         ;
-;       |fullAdder:fa2|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fourBitAdder:fa1|fullAdder:fa2 ; fullAdder    ; work         ;
-;    |fourBitAdder:fa2|      ; 3 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fourBitAdder:fa2               ; fourBitAdder ; work         ;
-;       |fullAdder:fa1|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fourBitAdder:fa2|fullAdder:fa1 ; fullAdder    ; work         ;
-;       |fullAdder:fa2|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fourBitAdder:fa2|fullAdder:fa2 ; fullAdder    ; work         ;
-;    |multiply:m2|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|multiply:m2                    ; multiply     ; work         ;
-;    |multiply:m3|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|multiply:m3                    ; multiply     ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+--------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                       ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name        ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------+-------------+--------------+
+; |multiplier                ; 29 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 16   ; 0            ; 0          ; |multiplier                ; multiplier  ; work         ;
+;    |fullAdder:fa10|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fullAdder:fa10 ; fullAdder   ; work         ;
+;    |fullAdder:fa11|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fullAdder:fa11 ; fullAdder   ; work         ;
+;    |fullAdder:fa1|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fullAdder:fa1  ; fullAdder   ; work         ;
+;    |fullAdder:fa2|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fullAdder:fa2  ; fullAdder   ; work         ;
+;    |fullAdder:fa5|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fullAdder:fa5  ; fullAdder   ; work         ;
+;    |fullAdder:fa6|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fullAdder:fa6  ; fullAdder   ; work         ;
+;    |fullAdder:fa7|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fullAdder:fa7  ; fullAdder   ; work         ;
+;    |fullAdder:fa9|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|fullAdder:fa9  ; fullAdder   ; work         ;
+;    |halfAdder:ha0|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|halfAdder:ha0  ; halfAdder   ; work         ;
+;    |halfAdder:ha4|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|halfAdder:ha4  ; halfAdder   ; work         ;
+;    |halfAdder:ha8|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|halfAdder:ha8  ; halfAdder   ; work         ;
+;    |multiply:mult0|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|multiply:mult0 ; multiply    ; work         ;
+;    |multiply:mult1|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|multiply:mult1 ; multiply    ; work         ;
+;    |multiply:mult2|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|multiply:mult2 ; multiply    ; work         ;
+;    |multiply:mult3|        ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|multiply:mult3 ; multiply    ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops               ;
++--------------------------------------------------------+---+
+; Logic Cell Name                                        ;   ;
++--------------------------------------------------------+---+
+; fullAdder:fa2|cout~0                                   ;   ;
+; Number of logic cells representing combinational loops ; 1 ;
++--------------------------------------------------------+---+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -248,49 +258,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------+
-; Port Connectivity Checks: "fourBitAdder:fa2" ;
-+---------+-------+----------+-----------------+
-; Port    ; Type  ; Severity ; Details         ;
-+---------+-------+----------+-----------------+
-; b[1..0] ; Input ; Info     ; Stuck at GND    ;
-+---------+-------+----------+-----------------+
-
-
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "fourBitAdder:fa1"                                                                   ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; b[0] ; Input  ; Info     ; Stuck at GND                                                                        ;
-; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "fourBitAdder:fa0"                                                                   ;
+; Port Connectivity Checks: "fullAdder:fa1"                                                                      ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multiply:m3"                                                                           ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; y[3..2] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multiply:m2"                                                                        ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; y[3] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -300,16 +273,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 16                          ;
-; cycloneiii_lcell_comb ; 17                          ;
-;     normal            ; 17                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 8                           ;
+; cycloneiii_lcell_comb ; 29                          ;
+;     normal            ; 29                          ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 17                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.24                        ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 5.39                        ;
 +-----------------------+-----------------------------+
 
 
@@ -328,43 +299,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Wed Nov  8 23:31:07 2023
+    Info: Processing started: Sat Nov 11 14:22:36 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off multiplier -c multiplier
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 5 design units, including 5 entities, in source file multiplier.v
     Info (12023): Found entity 1: multiplier File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 1
-    Info (12023): Found entity 2: fourBitAdder File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 29
-    Info (12023): Found entity 3: halfAdder File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 48
-    Info (12023): Found entity 4: fullAdder File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 60
-    Info (12023): Found entity 5: multiply File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 81
-Info (12021): Found 1 design units, including 1 entities, in source file /users/hiaru/documents/github/verilog_ld_lab/assg4/eightbitshiftregister/multipliertestbench.v
-    Info (12023): Found entity 1: multiplierTestbench File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/multiplierTestbench.v Line: 1
+    Info (12023): Found entity 2: fourBitAdder File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 46
+    Info (12023): Found entity 3: halfAdder File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 65
+    Info (12023): Found entity 4: fullAdder File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 77
+    Info (12023): Found entity 5: multiply File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 98
+Info (12021): Found 1 design units, including 1 entities, in source file multipliertestbench.v
+    Info (12023): Found entity 1: multiplierTestbench File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplierTestbench.v Line: 1
 Info (12127): Elaborating entity "multiplier" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at multiplier.v(16): truncated value with size 6 to match size of target (4) File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 16
-Warning (10230): Verilog HDL assignment warning at multiplier.v(17): truncated value with size 6 to match size of target (4) File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 17
-Warning (10230): Verilog HDL assignment warning at multiplier.v(18): truncated value with size 6 to match size of target (4) File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 18
-Warning (10030): Net "sumB01_B23[7..5]" at multiplier.v(9) has no driver or initial value, using a default initial value '0' File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 9
-Info (12128): Elaborating entity "multiply" for hierarchy "multiply:m0" File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 11
-Info (12128): Elaborating entity "fourBitAdder" for hierarchy "fourBitAdder:fa0" File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 20
-Warning (10230): Verilog HDL assignment warning at multiplier.v(44): truncated value with size 5 to match size of target (4) File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 44
-Info (12128): Elaborating entity "halfAdder" for hierarchy "fourBitAdder:fa0|halfAdder:ha0" File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 39
-Info (12128): Elaborating entity "fullAdder" for hierarchy "fourBitAdder:fa0|fullAdder:fa0" File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 40
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "c[5]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 5
-    Warning (13410): Pin "c[6]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 5
-    Warning (13410): Pin "c[7]" is stuck at GND File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 5
+Info (12128): Elaborating entity "multiply" for hierarchy "multiply:mult0" File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 12
+Info (12128): Elaborating entity "halfAdder" for hierarchy "halfAdder:ha0" File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 17
+Info (12128): Elaborating entity "fullAdder" for hierarchy "fullAdder:fa1" File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v Line: 18
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 31 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 45 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 15 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4785 megabytes
-    Info: Processing ended: Wed Nov  8 23:31:17 2023
-    Info: Elapsed time: 00:00:10
+    Info (21061): Implemented 29 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4788 megabytes
+    Info: Processing ended: Sat Nov 11 14:22:49 2023
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:12
 
 

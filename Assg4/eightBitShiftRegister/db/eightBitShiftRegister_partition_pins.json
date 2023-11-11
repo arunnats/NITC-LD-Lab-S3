@@ -42,10 +42,6 @@
 				{
 					"name" : "clk",
 					"strict" : false
-				},
-				{
-					"name" : "reset",
-					"strict" : false
 				}
 			]
 		}

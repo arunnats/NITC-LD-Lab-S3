@@ -1,5 +1,5 @@
 Analysis & Synthesis report for eightBitShiftRegister
-Wed Nov  8 21:08:00 2023
+Fri Nov 10 17:22:56 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -17,6 +17,7 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   9. Post-Synthesis Netlist Statistics for Top Partition
  10. Elapsed Time Per Partition
  11. Analysis & Synthesis Messages
+ 12. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -43,7 +44,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov  8 21:08:00 2023          ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 10 17:22:56 2023          ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; eightBitShiftRegister                          ;
 ; Top-level Entity Name              ; eightBitShiftRegister                          ;
@@ -201,8 +202,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 8         ;
-; Total fan-out                               ; 43        ;
-; Average fan-out                             ; 1.43      ;
+; Total fan-out                               ; 35        ;
+; Average fan-out                             ; 1.17      ;
 +---------------------------------------------+-----------+
 
 
@@ -224,7 +225,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total registers                              ; 8     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -238,7 +239,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------+---------------------------------+
 ; boundary_port     ; 11                              ;
 ; cycloneiii_ff     ; 8                               ;
-;     CLR           ; 8                               ;
+;     plain         ; 8                               ;
 ;                   ;                                 ;
 ; Max LUT depth     ; 0.00                            ;
 ; Average LUT depth ; 0.00                            ;
@@ -260,7 +261,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Wed Nov  8 21:07:50 2023
+    Info: Processing started: Fri Nov 10 17:22:46 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off eightBitShiftRegister -c eightBitShiftRegister
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -270,16 +271,25 @@ Info (12021): Found 1 design units, including 1 entities, in source file eightbi
     Info (12023): Found entity 1: eightBitShiftRegister File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegister.v Line: 1
 Info (12127): Elaborating entity "eightBitShiftRegister" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/output_files/eightBitShiftRegister.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "reset" File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegister.v Line: 3
 Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 8 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4835 megabytes
-    Info: Processing ended: Wed Nov  8 21:08:00 2023
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4831 megabytes
+    Info: Processing ended: Fri Nov 10 17:22:56 2023
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Total CPU time (on all processors): 00:00:12
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/output_files/eightBitShiftRegister.map.smsg.
 
 

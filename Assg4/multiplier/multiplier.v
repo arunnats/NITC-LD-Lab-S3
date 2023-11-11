@@ -4,25 +4,42 @@ module multiplier (
   output [7:0] c
 );
 
-  wire [3:0] multipliedB0, multipliedB1, multipliedB2, multipliedB3;
-  wire [3:0] shiftedB1, shiftedB2, shiftedB3;
-  wire [8:0] sumB0_B1, sumB2_B3, sumB01_B23;
+	wire [3:0] layer1, layer2, layer3;
+	wire [3:0] multa0, multa1, multa2, multa3;
+	wire [3:0] carry0, carry1, carry2;
+	wire [7:0] product;
+	
+	multiply mult0(a,b[0],multa0);
+	multiply mult1(a,b[1],multa1);
+	multiply mult2(a,b[2],multa2);
+	multiply mult3(a,b[3],multa3);
+	
+	halfAdder ha0(multa0[1],multa1[0],layer1[0],carry0[0]);
+	fullAdder fa1(multa0[2],multa1[1],carry0[0],layer1[1],carry0[1]);
+	fullAdder fa2(multa0[3],multa1[2],carry0[2],layer1[2],carry0[2]);
+	halfAdder ha3(carry0[2],multa1[3],layer1[3],carry0[3]);
+	
+	halfAdder ha4(layer1[1],multa2[0],layer2[0],carry1[0]);
+	fullAdder fa5(layer1[2],multa2[1],carry1[0],layer2[1],carry1[1]);
+	fullAdder fa6(layer1[3],multa2[2],carry1[1],layer2[2],carry1[2]);
+	fullAdder fa7(carry0[3],multa2[3],carry1[2],layer2[3],carry1[3]);
 
-  multiply m0 (.a(a), .b(b[0]), .y(multipliedB0));
-  multiply m1 (.a(a), .b(b[1]), .y(multipliedB1));
-  multiply m2 (.a(a), .b(b[2]), .y(multipliedB2));
-  multiply m3 (.a(a), .b(b[3]), .y(multipliedB3));
-
-  assign shiftedB1 = {2'b00, multipliedB1};
-  assign shiftedB2 = {1'b0, multipliedB2, 1'b0};
-  assign shiftedB3 = {multipliedB3, 2'b00};
-
-  fourBitAdder fa0 (.a(multipliedB0), .b(shiftedB1), .sum(sumB0_B1[3:0]), .cout(sumB0_B1[4]));
-  fourBitAdder fa1 (.a(sumB0_B1[3:0]), .b(shiftedB2), .sum(sumB2_B3[3:0]), .cout(sumB2_B3[4]));
-  fourBitAdder fa2 (.a(sumB2_B3[3:0]), .b(shiftedB3), .sum(sumB01_B23[3:0]), .cout(sumB01_B23[4]));
-
-  assign c = sumB01_B23[7:0];
-
+	halfAdder ha8(layer2[1],multa3[0],layer3[0],carry2[0]);
+	fullAdder fa9(layer2[2],multa3[1],carry2[0],layer3[1],carry2[1]);
+	fullAdder fa10(layer2[3],multa3[2],carry2[1],layer3[2],carry2[2]);
+	fullAdder fa11(carry1[3],multa3[3],carry2[2],layer3[3],carry2[3]);
+	
+	assign product[0] = multa0[0];
+	assign product[1] = layer1[0];
+	assign product[2] = layer2[0];
+	assign product[3] = layer3[0];
+	assign product[4] = layer3[1];
+	assign product[5] = layer3[2];
+	assign product[6] = layer3[3];
+	assign product[7] = carry2[3];
+	
+	assign c = product;
+	
 endmodule
 
 
