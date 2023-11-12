@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/stateMachine/simulation/modelsim
+vstateMachine
+!s110 1699772001
+!i10b 1
+!s100 @Fo5eBhbmTS>=CCLlBcKi2
+IUnSMfak02jhRIDL0[C5Oc3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1699771801
+8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/stateMachine/stateMachine.v
+FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/stateMachine/stateMachine.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1699772001.000000
+!s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/stateMachine/stateMachine.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/stateMachine|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/stateMachine/stateMachine.v|
+!i113 1
+Z3 o-vlog01compat -work work
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/stateMachine
+Z5 tCvgOpt 0
+nstate@machine
+vstateMachineTestBench
+!s110 1699772002
+!i10b 1
+!s100 93HZ[3EIS<YYZo;[b84N=2
+Ik[U:L>m@3gd_LQkQ_HTlZ2
+R1
+R0
+w1699771539
+8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/stateMachine/stateMachineTestbench.v
+FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/stateMachine/stateMachineTestbench.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1699772002.000000
+!s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/stateMachine/stateMachineTestbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/stateMachine|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/stateMachine/stateMachineTestbench.v|
+!i113 1
+R3
+R4
+R5
+nstate@machine@test@bench

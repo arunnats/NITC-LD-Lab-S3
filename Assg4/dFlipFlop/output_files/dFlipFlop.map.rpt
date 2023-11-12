@@ -1,5 +1,5 @@
 Analysis & Synthesis report for dFlipFlop
-Wed Nov  8 20:22:41 2023
+Sat Nov 11 20:52:51 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -43,16 +43,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov  8 20:22:41 2023          ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 11 20:52:51 2023          ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; dFlipFlop                                      ;
 ; Top-level Entity Name              ; dFlipFlop                                      ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 1                                              ;
-;     Total combinational functions  ; 0                                              ;
+; Total logic elements               ; 4                                              ;
+;     Total combinational functions  ; 4                                              ;
 ;     Dedicated logic registers      ; 1                                              ;
 ; Total registers                    ; 1                                              ;
-; Total pins                         ; 4                                              ;
+; Total pins                         ; 5                                              ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
 ; Embedded Multiplier 9-bit elements ; 0                                              ;
@@ -173,36 +173,36 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Estimated Total logic elements              ; 1      ;
-;                                             ;        ;
-; Total combinational functions               ; 0      ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 0      ;
-;     -- 3 input functions                    ; 0      ;
-;     -- <=2 input functions                  ; 0      ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 0      ;
-;     -- arithmetic mode                      ; 0      ;
-;                                             ;        ;
-; Total registers                             ; 1      ;
-;     -- Dedicated logic registers            ; 1      ;
-;     -- I/O registers                        ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 4      ;
-;                                             ;        ;
-; Embedded Multiplier 9-bit elements          ; 0      ;
-;                                             ;        ;
-; Maximum fan-out node                        ; q~reg0 ;
-; Maximum fan-out                             ; 1      ;
-; Total fan-out                               ; 8      ;
-; Average fan-out                             ; 0.89   ;
-+---------------------------------------------+--------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 4     ;
+;                                             ;       ;
+; Total combinational functions               ; 4     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 1     ;
+;     -- 3 input functions                    ; 1     ;
+;     -- <=2 input functions                  ; 2     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 4     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 1     ;
+;     -- Dedicated logic registers            ; 1     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 5     ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; q~1   ;
+; Maximum fan-out                             ; 3     ;
+; Total fan-out                               ; 20    ;
+; Average fan-out                             ; 1.33  ;
++---------------------------------------------+-------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -210,7 +210,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |dFlipFlop                 ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 4    ; 0            ; 0          ; |dFlipFlop          ; dFlipFlop   ; work         ;
+; |dFlipFlop                 ; 4 (4)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 5    ; 0            ; 0          ; |dFlipFlop          ; dFlipFlop   ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -232,16 +232,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 4                               ;
-; cycloneiii_ff     ; 1                               ;
-;     CLR           ; 1                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 5                           ;
+; cycloneiii_ff         ; 1                           ;
+;     CLR               ; 1                           ;
+; cycloneiii_lcell_comb ; 4                           ;
+;     normal            ; 4                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.90                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -259,7 +264,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Wed Nov  8 20:22:29 2023
+    Info: Processing started: Sat Nov 11 20:52:40 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off dFlipFlop -c dFlipFlop
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -268,17 +273,19 @@ Info (12021): Found 1 design units, including 1 entities, in source file dflipfl
 Info (12021): Found 1 design units, including 1 entities, in source file dflipfloptestbench.v
     Info (12023): Found entity 1: dFlipFlopTestbench File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/dFlipFlop/dFlipFlopTestbench.v Line: 1
 Info (12127): Elaborating entity "dFlipFlop" for the top level hierarchy
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "q~reg0" is converted into an equivalent circuit using register "q~reg0_emulated" and latch "q~1" File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/dFlipFlop/dFlipFlop.v Line: 6
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
+Info (21057): Implemented 9 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 1 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4796 megabytes
-    Info: Processing ended: Wed Nov  8 20:22:41 2023
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:10
+    Info (21061): Implemented 4 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4791 megabytes
+    Info: Processing ended: Sat Nov 11 20:52:51 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:12
 
 

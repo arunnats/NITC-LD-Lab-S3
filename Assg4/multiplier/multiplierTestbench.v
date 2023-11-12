@@ -1,4 +1,4 @@
-module multiplierTestbench;
+	module multiplierTestbench;
     reg [3:0] a, b;
     wire [7:0] c;
 

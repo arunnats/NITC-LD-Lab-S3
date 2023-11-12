@@ -1,12 +1,15 @@
-module dFlipFlop(d,clk,reset,q);
+module dFlipFlop(d,clk,preset,clear,q);
 input d;
 input clk;
-input reset;  
+input preset; 
+input clear;
 output reg q;
-always @(posedge clk or negedge reset)
+always @(posedge clk or negedge preset or negedge clear)
 begin
-if(reset==1'b0)
+if(clear==1'b0)
 q <= 1'b0;
+else if(preset==1'b0)
+q <= 1'b1;
 else
 q <= d;
 end

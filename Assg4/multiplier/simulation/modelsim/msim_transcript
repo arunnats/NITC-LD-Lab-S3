@@ -13,7 +13,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:23:49 on Nov 11,2023
+# Start time: 20:37:28 on Nov 11,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 14:23:50 on Nov 11,2023, Elapsed time: 0:00:01
+# End time: 20:37:29 on Nov 11,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +106,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:23:51 on Nov 11,2023
+# Start time: 20:37:29 on Nov 11,2023
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 14:23:51 on Nov 11,2023, Elapsed time: 0:00:00
+# End time: 20:37:29 on Nov 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -181,7 +181,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:23:51 on Nov 11,2023
+# Start time: 20:37:30 on Nov 11,2023
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 14:23:51 on Nov 11,2023, Elapsed time: 0:00:00
+# End time: 20:37:30 on Nov 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -234,7 +234,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:23:52 on Nov 11,2023
+# Start time: 20:37:30 on Nov 11,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 14:23:53 on Nov 11,2023, Elapsed time: 0:00:01
+# End time: 20:37:32 on Nov 11,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -375,7 +375,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:23:54 on Nov 11,2023
+# Start time: 20:37:32 on Nov 11,2023
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 14:23:54 on Nov 11,2023, Elapsed time: 0:00:00
+# End time: 20:37:33 on Nov 11,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/fiftyfivenm_ver
@@ -469,7 +469,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:23:55 on Nov 11,2023
+# Start time: 20:37:34 on Nov 11,2023
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v 
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFE
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFEAS
@@ -562,15 +562,15 @@
 # 	fiftyfivenm_jtag
 # 	fiftyfivenm_adcblock
 # 	fiftyfivenm_phase_detector
-# End time: 14:23:56 on Nov 11,2023, Elapsed time: 0:00:01
+# End time: 20:37:35 on Nov 11,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:23:56 on Nov 11,2023
+# Start time: 20:37:35 on Nov 11,2023
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 14:23:59 on Nov 11,2023, Elapsed time: 0:00:03
+# End time: 20:37:38 on Nov 11,2023, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -584,7 +584,7 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier {C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:24:00 on Nov 11,2023
+# Start time: 20:37:39 on Nov 11,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier" C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplier.v 
 # -- Compiling module multiplier
 # -- Compiling module fourBitAdder
@@ -595,23 +595,23 @@
 # Top level modules:
 # 	multiplier
 # 	fourBitAdder
-# End time: 14:24:00 on Nov 11,2023, Elapsed time: 0:00:00
+# End time: 20:37:39 on Nov 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier {C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplierTestbench.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:24:00 on Nov 11,2023
+# Start time: 20:37:39 on Nov 11,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier" C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplierTestbench.v 
 # -- Compiling module multiplierTestbench
 # 
 # Top level modules:
 # 	multiplierTestbench
-# End time: 14:24:00 on Nov 11,2023, Elapsed time: 0:00:00
+# End time: 20:37:39 on Nov 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  multiplierTestbench
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" multiplierTestbench 
-# Start time: 14:24:01 on Nov 11,2023
+# Start time: 20:37:40 on Nov 11,2023
 # Loading work.multiplierTestbench
 # Loading work.multiplier
 # Loading work.multiply
@@ -628,5 +628,5 @@
 #    Time: 2560 ps  Iteration: 0  Instance: /multiplierTestbench
 # 1
 # Break in Module multiplierTestbench at C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/multiplier/multiplierTestbench.v line 16
-# End time: 14:26:08 on Nov 11,2023, Elapsed time: 0:02:07
+# End time: 20:38:19 on Nov 11,2023, Elapsed time: 0:00:39
 # Errors: 0, Warnings: 0

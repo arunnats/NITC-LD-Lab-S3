@@ -9,48 +9,48 @@ z2
 cModel Technology
 Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/simulation/modelsim
 veightBitShiftRegister
-Z1 !s110 1699617261
+!s110 1699715423
 !i10b 1
 !s100 X?]M8b3RKK0lSA;RQ3Q@Y1
 IXBhiC9l5=C[gEE_;nM58>3
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1699616827
 8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegister.v
 FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegister.v
 L0 1
-Z3 OV;L;10.5b;63
+Z2 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1699617261.000000
+Z3 !s108 1699715423.000000
 !s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegister.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegister.v|
 !i113 1
-Z5 o-vlog01compat -work work
-Z6 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister
-Z7 tCvgOpt 0
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister
+Z6 tCvgOpt 0
 neight@bit@shift@register
 veightBitShiftRegisterTestBench
-R1
+!s110 1699715424
 !i10b 1
 !s100 d?;__]@I7<Fh8][3_64nj1
 IXUiFbo6HmhFX5g6BbOHcL0
-R2
+R1
 R0
 w1699617166
 8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegisterTestBench.v
 FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegisterTestBench.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-R4
+R3
 !s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegisterTestBench.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/eightBitShiftRegister/eightBitShiftRegisterTestBench.v|
 !i113 1
+R4
 R5
 R6
-R7
 neight@bit@shift@register@test@bench

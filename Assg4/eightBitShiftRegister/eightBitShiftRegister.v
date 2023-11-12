@@ -15,6 +15,7 @@ module eightBitShiftRegister (
         end
     end
 	 
+	 
 	 assign data_out = shift_reg;
 
 endmodule

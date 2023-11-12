@@ -1,10 +1,11 @@
 module dFlipFlopTestbench();
     reg d;
     reg clk;
-    reg reset;
+    reg preset;
+	 reg clear;
     wire q;
 
-    dFlipFlop testbench(d,clk,reset,q);
+    dFlipFlop testbench(d,clk,preset,clear,q);
 
     initial begin
         clk = 0;
@@ -12,7 +13,8 @@ module dFlipFlopTestbench();
     end
 
     initial begin
-        reset = 1;
+        preset = 1;
+		  clear = 1;
         d = 0;
         #20 
 		  d = 1;    
@@ -21,7 +23,9 @@ module dFlipFlopTestbench();
         #20
 		  d = 1;
         #20;
-		  reset = 0; 
+		  clear = 0; 
+        #20 
+		  clear = 1; 
         #20 
 		  d = 1;    
         #20 
@@ -29,7 +33,39 @@ module dFlipFlopTestbench();
         #20
 		  d = 1;
         #20;
-		  reset = 1; 
+		  preset = 0; 
+        #20 
+		  preset = 1; 
+        #20 
+		  d = 1;    
+        #20 
+		  d = 0;
+        #20
+		  d = 1;
+		  clear = 0; 
+        #20 
+		  clear = 1; 
+        d = 0;
+        #20 
+		  d = 1;    
+        #20 
+		  d = 0;
+        #20
+		  d = 1;
+        #20;
+		  preset = 0; 
+        #20 
+		  preset = 1; 
+        #20 
+		  d = 1;    
+        #20 
+		  d = 0;
+        #20
+		  d = 1;
+        #20;
+		  clear = 0; 
+        #20 
+		  clear = 1; 
         #20 
 		  d = 1;    
         #20 
