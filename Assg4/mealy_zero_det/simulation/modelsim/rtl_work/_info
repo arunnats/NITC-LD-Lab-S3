@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/mealy_zero_det/simulation/modelsim
+vmealy_zero_det
+Z1 !s110 1699874141
+!i10b 1
+!s100 UdcbW:l3PF9dIbX<h3Yif1
+IOjICLX[E0_<=J5e<3WYGb3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1699874105
+8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/mealy_zero_det/mealy_zero_det.v
+FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/mealy_zero_det/mealy_zero_det.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1699874141.000000
+!s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/mealy_zero_det/mealy_zero_det.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/mealy_zero_det|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/mealy_zero_det/mealy_zero_det.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/mealy_zero_det
+Z7 tCvgOpt 0
+vmealy_zero_det_tb
+R1
+!i10b 1
+!s100 dD:BV>eHTY7Nf^ig7W2JO3
+I5XeI@9iD=hRh3BRXc[n<Z3
+R2
+R0
+w1699873673
+8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/mealy_zero_det/mealy_zero_det_tb.v
+FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/mealy_zero_det/mealy_zero_det_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/mealy_zero_det/mealy_zero_det_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/mealy_zero_det|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/mealy_zero_det/mealy_zero_det_tb.v|
+!i113 1
+R5
+R6
+R7

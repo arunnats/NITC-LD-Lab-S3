@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/stateMachine/simulation/modelsim
 vlpm_abs
-Z1 !s110 1699771993
+Z1 !s110 1699879755
 !i10b 1
 !s100 O9i<YS?ECZC8XU2m2T>HQ0
 IOT4`adjVi1eW8UAal7SQL1
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1699771992.000000
+Z7 !s108 1699879755.000000
 Z8 !s107 c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|lpm_ver|c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v|
 !i113 1
@@ -72,7 +72,7 @@ R9
 R10
 R11
 vlpm_bipad
-R1
+Z12 !s110 1699879756
 !i10b 1
 !s100 2eZaafdWMNbm_oGJD`IS61
 IO_WSVo:nCZ7PZ`@3d0]dK2
@@ -388,7 +388,7 @@ R9
 R10
 R11
 vLPM_HINT_EVALUATION
-Z12 !s110 1699771992
+R1
 !i10b 1
 !s100 `WKMS]SM@JbIe0gCi<3f82
 I_b@5CT5E`id_=zaAS2k]23
@@ -410,7 +410,7 @@ R10
 R11
 n@l@p@m_@h@i@n@t_@e@v@a@l@u@a@t@i@o@n
 vlpm_inpad
-R1
+R12
 !i10b 1
 !s100 V5b_N<Y1MO:^NFkHi2nm:1
 I3LKE0:?bOd>^Okn>L08Ki0
@@ -473,7 +473,7 @@ R9
 R10
 R11
 vLPM_MEMORY_INITIALIZATION
-R12
+R1
 !i10b 1
 !s100 DR_SV_J4fzH0gTOLESO6;1
 IYPiPl[L;mPcoz4W0SV5n>2
@@ -558,7 +558,7 @@ R9
 R10
 R11
 vlpm_outpad
-R1
+R12
 !i10b 1
 !s100 co;D>HcBWR;nkbnW:TU;e3
 I2I`0=i1i^FAgz?fXR7ggh3

@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at stateMachine.v(7): always construct contains both blocking and non-blocking assignments File: C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/Assg4/stateMachine/stateMachine.v Line: 7

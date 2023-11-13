@@ -1,13 +1,14 @@
 //`timescale 1ns/1ps;
 module d_LatchTestbench();
 reg d;
-reg reset;
+reg preset;
+reg clear'
 wire q;
 
-d_Latch testbench(.d(d),.reset(reset),.q(q));
+d_Latch testbench(.d(d),.preset(preset),.clear(clear),.q(q));
  
 initial begin  
- reset=1;
+ preset=1;
  d <= 0;
  #20;
  d <= 1;
@@ -16,10 +17,10 @@ initial begin
  #20;
  d <= 1;
  #20;
- reset=0;
+ preset=0;
  #20;
  d <=1;
- reset=1;
+ preset=1;
  #20;
  d <= 0;
  #20;
