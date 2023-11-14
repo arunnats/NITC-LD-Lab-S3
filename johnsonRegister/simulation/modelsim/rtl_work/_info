@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/johnsonRegister/simulation/modelsim
+vjohnsonRegister
+Z1 !s110 1699934375
+!i10b 1
+!s100 1Z9GcoXz=L=dNmJPInbAD0
+IR_z?@Cc=DP1_jk:=FkV7<3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1699934312
+8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/johnsonRegister/johnsonRegister.v
+FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/johnsonRegister/johnsonRegister.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1699934375.000000
+!s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/johnsonRegister/johnsonRegister.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/johnsonRegister|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/johnsonRegister/johnsonRegister.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/johnsonRegister
+Z7 tCvgOpt 0
+njohnson@register
+vjohnsonRegisterTb
+R1
+!i10b 1
+!s100 6P5mP`TIom7H2SGk5o]VD3
+I5>5Bm4C[cLOHE=SERP`A`0
+R2
+R0
+w1699934314
+8C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/johnsonRegister/johnsonRegisterTB.v
+FC:/Users/hiaru/Documents/GitHub/verilog_ld_lab/johnsonRegister/johnsonRegisterTB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/johnsonRegister/johnsonRegisterTB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/johnsonRegister|C:/Users/hiaru/Documents/GitHub/verilog_ld_lab/johnsonRegister/johnsonRegisterTB.v|
+!i113 1
+R5
+R6
+R7
+njohnson@register@tb

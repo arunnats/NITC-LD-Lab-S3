@@ -1,0 +1,60 @@
+module parityChecker(
+input dataIn,
+input reset,
+input clk,
+output reg dataOut
+);
+
+parameter IDLE=1,EVEN=2,ODD=3;
+
+reg [1:0] state, nextState;
+
+always@(posedge clk)
+begin
+	if(reset)
+		state = IDLE;
+	else
+		state = nextState;
+		
+	case(state)
+	
+	IDLE:
+		if(dataIn)
+		begin
+			nextState = ODD;
+			dataOut = 0;
+		end
+		else
+		begin
+			nextState = EVEN;
+			dataOut = 1;
+		end
+		
+	EVEN:
+		if(dataIn)
+		begin
+			nextState = ODD;
+			dataOut = 0;
+		end
+		else
+		begin
+			nextState = EVEN;
+			dataOut = 1;
+		end
+	ODD:
+		if(dataIn)
+		begin
+			nextState = EVEN;
+			dataOut = 1;
+		end
+		else
+		begin
+			nextState = ODD;
+			dataOut = 1;
+		end
+	
+	endcase
+end
+
+endmodule
+	

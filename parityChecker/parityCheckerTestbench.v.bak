@@ -1,0 +1,20 @@
+parityCheckerTestbench;
+reg dataIn, 
+reset, 
+clk;
+wire dataOut;
+
+parityChecker testbench(dataIn, clk, reset, dataOut);
+
+initial
+begin
+
+x_in = 0;
+reset = 1;
+clk = 0;	
+
+end
+
+always #25 {x_in, reset} = $random;
+always #25 clk = ~clk;
+endmodule

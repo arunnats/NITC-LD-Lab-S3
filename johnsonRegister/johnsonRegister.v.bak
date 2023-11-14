@@ -1,0 +1,15 @@
+d_latch(output reg y,
+input clk,
+input clear,
+input d
+);
+
+always@(posedge clk)
+begin
+	if(clear)
+		y <= 0;
+	else
+		d <= y;
+end
+
+endmodule

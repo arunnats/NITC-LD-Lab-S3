@@ -1,0 +1,17 @@
+module johnsonRegisterTb
+wire out[2:0];
+reg clk;
+reg clear;
+
+johnsonRegister johnsonRegistertb(out,clk,clear);
+
+initial 
+begin
+        clk = 0;
+        forever #10 clk = ~clk;  
+end
+
+initial
+begin
+			#200 $finish;
+end

@@ -1,0 +1,15 @@
+|parityChecker
+dataIn => Selector1.IN3
+dataIn => Selector0.IN3
+dataIn => Selector2.IN3
+dataIn => Selector1.IN2
+dataIn => Selector0.IN2
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.IDLE.DATAIN
+clk => dataOut~reg0.CLK
+clk => nextState~1.DATAIN
+clk => state~3.DATAIN
+dataOut <= dataOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
